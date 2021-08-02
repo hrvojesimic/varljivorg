@@ -1,0 +1,136 @@
+<!DOCTYPE html >
+<html lang="hr">
+      <head xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+      <meta charset="utf-8"/>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1"/>
+      <meta name="description" content="Logika"/>
+      <meta name="author" content=""/>
+  		<meta property="author" content=""/>
+      <meta name="keywords" content=""/>
+      <meta name="language" content="hr"/>
+      <title>﻿Dedukcija, indukcija, abdukcija</title>
+      <link rel="stylesheet" href="//www.varljiv.org/css/bootstrap.min.css"/>
+      <link rel="stylesheet" href="//www.varljiv.org/css/mstory.css" type="text/css"/>
+      <link rel="image_src" type="image/jpeg" href="//www.varljiv.org/it/a/deinab.jpg"/>
+      <link href="https://fonts.googleapis.com/css?family=Lora:400|Merriweather:300,300i|Open+Sans:400&amp;subset=latin,latin-ext" rel="stylesheet"></link>
+      <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"/>
+       
+  <meta property="og:title" content="﻿Dedukcija, indukcija, abdukcija"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:url" content="http://www.varljiv.org/a/deinab"/>
+  <meta property="og:image" content="//www.varljiv.org/it/a/deinab.jpg"/>
+  <meta property="og:site_name" content="Varljiv"/>
+  <meta property="og:description" content="Logika"/>
+  <meta property="fb:admins" content="1316774628"/>
+
+  <!--[if lt IE 9]><script src=/js/html5.js></script><![endif]-->
+  <link rel="alternate" title="Varljiv RSS" href="//www.varljiv.org/feed.rss" type="application/rss+xml"/>
+  <link rel="publisher" href="https://plus.google.com/116851595571317806625/"/>
+  <script type="text/javascript" src="//www.varljiv.org/js/modernizr.custom.57668.js"></script>
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-22886857-1']);
+  _gaq.push(['_setDomainName', 'none']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();</script>
+</head>
+      <body>
+      <div id="fb-root"></div><script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+      <link href="https://plus.google.com/116851595571317806625" rel="publisher"/><script type="text/javascript">
+window.___gcfg = {lang: 'en-GB'};
+(function() 
+{var po = document.createElement("script");
+po.type = "text/javascript"; po.async = true;po.src = "https://apis.google.com/js/plusone.js";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(po, s);
+})();</script>
+      <div class="story-container">
+    <header id="small-header" class="noheader">
+      <a href="//www.varljiv.org"><img width="64" src="//www.varljiv.org/i/site/v.logo.black.png" style="margin-bottom:-25px"/></a>
+    </header>
+    <div>
+    <article id="article">
+      <div class="zor"><p class="normal">implikacija</p><p class="normal">&quot;ako A onda B&quot;, npr. ako pritisnem crvenu tipku na mobitelu, onda će on prestati zvoniti. A =&gt; B</p><p class="normal">Primijetite da ne vrijedi nužno obrat B =&gt; A. Npr. ne slijedi da ako je mobitel prestao zvoniti, to znači nužno da sam pritisnuo crvenu tipku &quot;odbij poziv&quot;. Možda je prestao zvoniti jer je pozivatelj prekinuo vezu. Ili zato što sam pritisnuo tipku &quot;utišaj&quot;. Ili se baterija ispraznila. Ili iz nekog petog razloga.</p><p class="normal">Isto tako, pravilo ne govori ništa o tome što će se dogoditi ako <em>ne</em> pritisnem crvenu tipku na mobitelu. Možda će nastaviti zvoniti, a možda će prestati iz nekog drugog razloga.</p><p class="normal">Jedini slučaj u kojem možemo pokazati da implikacija ne vrijedi je da nađem slučaj u kojem se nakon A ne dogodi B, to jest nakon pritiska na crvenu tipku telefon nastavi zvoniti. Ali nikad ne možemo logički dokazati da implikacija <em>vrijedi</em> na temelju pojedinačnih događaja.</p><p class="normal">Ako imamo situaciju, ishod i pravilo koje govori kakav će biti ishod koje situacije, iz dva dana podatka možemo nešto zaključiti o trećem. Zaključivanje može biti u tri oblika:</p><ul><li><strong>Dedukcija</strong>: iz situacije i pravila možemo zaključiti ishod. Iz općenitog pravila &quot;crvena tipka prekida zvonjavu mobitela&quot; i konkretne situacije &quot;pritisnuo sam crvenu tipku na zvonećem mobitelu&quot; možemo zaključiti da će se ishod biti &quot;mobitel prestaje zvoniti&quot;. Ako je opće pravilo ispravno i ako je preduvjet ispunjen, ishod formalno-logički mora biti takav.</li><li><strong>Indukcija</strong>: iz situacije i ishoda možemo nagađati pravilo. Obično nam treba puno parova situacija-ishod. Ako telefon prestaje zvoniti svaki put kad pritisnimo crvenu tipku, možemo biti djelomično uvjereni da vrijedi pravilo &quot;crvena tipka prekida zvonjavu&quot;.</li><li><strong>Abdukcija</strong>: iz pravila i ishoda možemo nagađati situaciju. Budući da potencijalnih situacija koji uzrokuju isti ishod ima puno, ni ovaj put ne možemo formalno zaključiti da nešto mora biti uzrok, samo da je možda uzrok. Ako u mraku zgrabimo mobitel i on baš tada prestane zvoniti, možemo razmisliti o mogućim uzrocima tog prestanka i zaključiti da je najvjerojatnije prestao zato što smo slučajno pritisnuli tipku.</li><!-- ... --></ul><h2>Dedukcija</h2><p class="normal">Primjetite kako je <strong>dedukcija</strong> u ovom društvu jedina metoda po kojoj zaključak <em>nužno</em> slijedi iz premisa, pa se stoga čini superiornijom. To je istina ako pričamo o matematici. Međutim, očekivanje određenog ishoda u stvarnom svijetu nije baš tako izvjesno. Teško je pronaći pravila koja vrijede bez izuzetka, ili sa sigurnošću utvrditi da smo u situaciji u kojoj se može primijeniti to pravilo.</p><p class="normal">Na primjer, da bi pravilo &quot;pritisak na crvenu tipku prekida zvonjavu&quot; više odgovaralo stvarnom svijetu, trebali bi ga proširiti s nekim preduvjetima: &quot;ako je mobitel ispravan, i ako pritisak nije preslab, i ako je crvena tipka na svom mjestu, i ako pritisak traje dulje od 5 milisekundi, i ako zvoni jer primamo poziv...&quot; Popis ograda može biti iznimno dug, a sa svakim će biti sve teže provjeriti da li neka situacija zadovoljava sve preduvjete pravila. Kako možemo biti <em>potpuno</em> sigurni da mobitel ispravno radi, ili da smo dobro pritisnuli tipku? Na kraju smo prisiljeni prihvatiti određenu nesigurnost u našim zaključcima, isto kao što je ona prisutna kod indukcije ili abdukcije.</p><h2>Indukcija</h2><p class="normal"><strong>Indukcija</strong> opet ima svoje probleme. Pritisnemo crvenu tipku i zvonjava prestane. To je korisna informacija, ali teško da je pouzdan dokaz pravila. Možda je samo slučajnost. Zato ponavljamo &quot;eksperiment&quot; više puta, i svaki put uspijevamo prekinuti zvonjavu crvenom tipkom. Šansa da su svi eksperimenti uspjeli pukim slučajem uskoro postaje toliko mala da je u praksi možemo ignorirati.</p><p class="normal">Ali, u stvari, pokazali smo samo da crvena tipka <em>ponekad</em> prekida zvonjavu, ali nije očito da će se to <em>uvijek</em> događati. Recimo, u našim pokusima pritiskali smo crvenu tipku u roku sekundu ili dvije od početka zvonjave: možda pritisak djeluje samo u tom periodu? Možda neće funkcionirati ako se preselimo u drugu državu? Možda ne bi funkcioniralo da nosimo rukavice? Jednostavno ne znamo - jer nismo probali. Stoga ponavljamo eksperiment: što više puta na što više različitih načina. Razmišljamo koje bi faktori mogli utjecati na ishod i time pokušavamo opovrgnuti pravilo, a to možemo dobiti samo ako pronađemo neku situaciju u kojoj nećemo dobiti očekivani ishod.</p><p class="normal">Sjetite se što smo rekli: nikad ne možemo logički dokazati da implikacija vrijedi na temelju pojedinačnih događaja. Pravilo će biti potvrđeno onoliko koliko odoljeva sve jačim pokušajima opovrgavanja.</p><h2>Abdukcija</h2><p class="normal"><strong>Abdukcija</strong> je riječ koja se ...</p><p class="normal">Teoretičari zavjere obično zapinju s abdukcijom. Vjerojatnost &quot;ako je A, onda se može očekivati B&quot; se ne smije zamjeniti s vjerojatnošću &quot;ako je B da će biti A&quot;.</p><div class="boxright"><blockquote class="vbigq"><p class="normal"><em>Na temelju mog znanja o svijetu i onog što vidim oko sebe, mislim da je puno vjerojatnije kako su izvješća o letećim tanjurima rezultat <strong>poznatih neracionalnih karakteristika zemaljske inteligencije</strong> nego <strong>nepoznatih racionalnih napora vanzemaljske inteligencije</strong>.</em></p><!-- ... --></blockquote><p class="rcaption">Richard Feynman</p><!-- ... --></div><p class="normal">Npr. ako vidimo plavičasto svijetlo na nebu (ishod) i ako mislimo da je velika vjerojatnost da vanzemaljska letjelica emitira takvo svjetlo (pravilo), to ne povlači da je velika vjerojatnost da je to svjetlo emitirala vanzemaljska letjelica. Umjesto toga, trebamo usporediti koliko su vjerojatne sve moguće situacije koje bi rezultirale opaženim ishodom, i tek onda bi mogli zaključiti koliko je vjerojatno </p><p class="normal"><p id="shareline" class="cfull">
+    <fb:like send="true" layout="button_count" width="350" show_faces="false"></fb:like>
+    <g:plusone size="small" annotation="none"></g:plusone>
+    <span>
+      <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="varljiv">Tweet</a>
+      <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    </span>
+  </p></p><!-- ... --></div>
+    </article>
+    <div class="row" id="suggestions"><div class="col-md-3 col-sm-6 suggestion">
+          <a href="//www.varljiv.org/a/samoubojstvo-statistikom">
+            <img height="100" width="100" class="square" src="//www.varljiv.org/it/a/samoubojstvo-statistikom.jpg" title="﻿Samoubojstvo statistikom" alt="﻿Samoubojstvo statistikom"/>
+            <h3>﻿Samoubojstvo statistikom</h3>
+            <p>Mislite kako statistike izražavaju precizne i apsolutne činjenice, neupitne važnosti i objektivnosti? A što kad nas tri točne statistike dovedu do suprotnih zaključaka?</p>
+          </a>
+        </div><div class="col-md-3 col-sm-6 suggestion">
+          <a href="//www.varljiv.org/b/razlika">
+            <img height="100" width="100" class="square" src="//www.varljiv.org/it/xkcd/242-hr.png" title="Razlika" alt="Razlika"/>
+            <h3>Razlika</h3>
+            <p>Razlika između normalne osobe i znanstvenika</p>
+          </a>
+        </div><div class="col-md-3 col-sm-6 suggestion">
+          <a href="//www.varljiv.org/b/dob">
+            <img height="100" width="100" class="square" src="//www.varljiv.org/it/quote/dob.png" title="Naša dob i prirodni poredak svemira" alt="Naša dob i prirodni poredak svemira"/>
+            <h3>Naša dob i prirodni poredak svemira</h3>
+            <p>Svijet je poludio negdje oko vašeg 35. rođendana.</p>
+          </a>
+        </div><div class="col-md-3 col-sm-6 suggestion">
+          <a href="//www.varljiv.org/a/skeptik">
+            <img height="100" width="100" class="square" src="//www.varljiv.org/it/a/skeptik.jpg" title="Što znači biti skeptik?" alt="Što znači biti skeptik?"/>
+            <h3>Što znači biti skeptik?</h3>
+            <p>Čuli ste da se netko naziva skeptikom, ali ne znate što pod tim misli? Evo pojašnjenja jednog značenja koje je naročito važno u suvremenom svijetu.</p>
+          </a>
+        </div></div>
+    <div>
+<div id="disqus_thread"></div>
+  <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'varljiv';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+  </div>
+    <footer>
+      <p class="tagline">Tekst 
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">
+          <img alt="Creative Commons Licence" style="border-width:0; display:inline" src="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png"/>
+        </a> <a href="/">//www.varljiv.org</a> 
+        (osim gdje je drugačije navedeno)
+        <br/>
+        Korištene i prilagođene ikone 
+        <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY</a> 
+        <a href="https://github.com/emojione/emojione/tree/2.2.7">EmojiOne 2.2.7</a>
+        <br/>
+        Kontakt: <a href="mailto:admin@varljiv.org">admin@varljiv.org</a>
+        <br/>
+      </p>
+    </footer>
+  </div>
+      <script src="//www.varljiv.org/js/jquery-3.1.1.min.js"></script><script src="//www.varljiv.org/js/bootstrap.min.js"></script><script type="text/javascript" src="//www.varljiv.org/js/e2f-common-0.2.js"></script><script type="text/javascript">$(e2fInit);</script><script type="text/javascript"></script>
+    </body>
+    </html>

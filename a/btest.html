@@ -1,0 +1,195 @@
+<!DOCTYPE html >
+<html lang="hr">
+      <head xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+      <meta charset="utf-8"/>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1"/>
+      <meta name="description" content="Iako je nalaz testa loš, još uvijek postoji šansa da vaša pacijentica nema neizlječivu bolest. Ali, kolika?"/>
+      <meta name="author" content=""/>
+  		<meta property="author" content=""/>
+      <meta name="keywords" content="test,bayes,Serija članaka o varljivoj statistici,statistika,probability"/>
+      <meta name="language" content="hr"/>
+      <title>﻿Kako interpretirati rezultate testa?</title>
+      <link rel="stylesheet" href="//www.varljiv.org/css/bootstrap.min.css"/>
+      <link rel="stylesheet" href="//www.varljiv.org/css/mstory.css" type="text/css"/>
+      <link rel="image_src" type="image/jpeg" href="//www.varljiv.org/it/a/btest.jpg"/>
+      <link href="https://fonts.googleapis.com/css?family=Lora:400|Merriweather:300,300i|Open+Sans:400&amp;subset=latin,latin-ext" rel="stylesheet"></link>
+      <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"/>
+       
+  <meta property="og:title" content="﻿Kako interpretirati rezultate testa?"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:url" content="http://www.varljiv.org/a/btest"/>
+  <meta property="og:image" content="//www.varljiv.org/it/a/btest.jpg"/>
+  <meta property="og:site_name" content="Varljiv"/>
+  <meta property="og:description" content="Iako je nalaz testa loš, još uvijek postoji šansa da vaša pacijentica nema neizlječivu bolest. Ali, kolika?"/>
+  <meta property="fb:admins" content="1316774628"/>
+
+  <!--[if lt IE 9]><script src=/js/html5.js></script><![endif]-->
+  <link rel="alternate" title="Varljiv RSS" href="//www.varljiv.org/feed.rss" type="application/rss+xml"/>
+  <link rel="publisher" href="https://plus.google.com/116851595571317806625/"/>
+  <script type="text/javascript" src="//www.varljiv.org/js/modernizr.custom.57668.js"></script>
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-22886857-1']);
+  _gaq.push(['_setDomainName', 'none']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();</script>
+</head>
+      <body>
+      <div id="fb-root"></div><script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+      <link href="https://plus.google.com/116851595571317806625" rel="publisher"/><script type="text/javascript">
+window.___gcfg = {lang: 'en-GB'};
+(function() 
+{var po = document.createElement("script");
+po.type = "text/javascript"; po.async = true;po.src = "https://apis.google.com/js/plusone.js";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(po, s);
+})();</script>
+      <div class="story-container">
+    <header id="small-header" class="noheader">
+      <a href="//www.varljiv.org"><img width="64" src="//www.varljiv.org/i/site/v.logo.black.png" style="margin-bottom:-25px"/></a>
+    </header>
+    <div>
+    <article id="article">
+      <div class="zor"><p class="boxright"><span class="rcaption">16.02.2012.</span></p><h1>Kako interpretirati rezultate testa?</h1><p class="normal"><span class="dropcap">Z</span>amislite da ste liječnik i da u razgovoru s pacijenticom saznate da joj je jedan djed bolovao od teške genetske bolesti. Kažete joj kako postoji mogućnost da je i ona ima, a da toga nije svjesna. Šansa da ju je naslijedila je vrlo mala: samo jedan u sto. Međutim, to je nije umirilo. Ona želi biti sigurna da nije u tih 1%.</p><p class="normal">A to nije tako jednostavno. Postoji, doduše, jedan eksperimentalni test za tu bolest, ali on je daleko od savršenog: učestalost krivo pozitivnih nalaza je deset posto. Dakle, u prosjeku, od sto ljudi koji <em>nemaju</em> bolest, deset će dobiti neispravan (pozitivan) nalaz. S druge strane, svi ljudi koji <em>imaju</em> bolest će dobiti pozitivan nalaz (nema krivo negativnih nalaza). Iako je svjesna činjenice da tim testom neće dobiti konačan odgovor, odlučuje se za test.</p><p class="normal">Nakon dva tjedna, dolazi vam sva u suzama. Nalaz testa je pozitivan! Kažete joj da ne očajava: test nije savršen i još uvijek postoji šansa da nema bolest. Vjerojatnost da je test pogriješio i da je ona ipak <em>zdrava</em> procjenjujete na otprilike... koliko posto?</p><div id="radio" class="btn-group btn-group-justified"><p class="center"><button type="button" id="a0" class="btn btn-default ">0%</button> <button type="button" id="a10" class="btn btn-default ">10%</button> <button type="button" id="a20" class="btn btn-default ">20%</button> <button type="button" id="a30" class="btn btn-default ">30%</button> <button type="button" id="a40" class="btn btn-default ">40%</button> <button type="button" id="a50" class="btn btn-default ">50%</button> <button type="button" id="a60" class="btn btn-default ">60%</button> <button type="button" id="a70" class="btn btn-default ">70%</button> <button type="button" id="a80" class="btn btn-default ">80%</button> <button type="button" id="a90" class="btn btn-default ">90%</button> <button type="button" id="a100" class="btn btn-default ">100%</button></p><!-- ... --></div><p id="SkipRadio" class="center">(<span class="fakelink">preskoči odgovaranje</span>)</p><div id="Step1" style="display: none;"><p class="normal">Većina ljudi, štoviše i većina liječnika, procjenila bi tu vjerojatnost na oko <strong>deset posto</strong> &mdash; ako test griješi u oko 10% slučajeva, to je ta nesigurnost za koju se hvatamo u ovom slučaju. Ali, srećom, ispada da je vjerojatnost da je sve u redu ipak veća.</p><p id="faces" class="floatright"></p><h2>Provođenje testa</h2><p class="normal">Recimo da testiramo sto ljudi iz njene populacije. U prosjeku, jedna među njima ima tu bolest <img src="//www.varljiv.org/i/icon/red-pface.png" class="img-responsive"/>, a svi ostali su zdravi <img src="//www.varljiv.org/i/icon/gray-pface.png" class="img-responsive"/>. Razmislite malo kakvi bi rezultati bili da testiranje provedemo nad cijelom populacijom.</p><p class="center"><button type="button" id="doTest" class="btn btn-default ">Provedi testiranje!</button></p><div id="Step2" style="display: none;"><p class="normal">Budući da ovaj test nikad ne daje lažno negativne rezultate, stvarno bolesna osoba je dobila pozitivan nalaz <img src="//www.varljiv.org/i/icon/red-frowny.png" class="img-responsive"/>.</p><p class="normal">Ali što je sa preostalih 99 zdravih ljudi? Prema učestalosti krivo pozitivnih nalaza (10%), oko deset zdravih ljudi također će dobiti pozitivan nalaz <img src="//www.varljiv.org/i/icon/green-frowny.png" class="img-responsive"/>. Ostali imaju negativan nalaz, što znači da su sigurno zdravi <img src="//www.varljiv.org/i/icon/yellow-smiley.png" class="img-responsive"/>.</p><p class="normal">Dakle, možemo reći da je cca 11 ljudi dobilo pozitivan nalaz iako je <em>samo jedan</em> od njih stvarno bolestan. Tako dolazimo do vjerojatnosti da je netko iz opće populacije s pozitivnim rezultatom testa u stvari zdrav oko 10/11. Vjerojatnost da je cura zdrava je oko 91 posto!</p><h2>Ali, zar pozitivan rezultat testa ne znači ništa? </h2><p class="normal">Pa znači. Prije testa, vjerojatnost bolesti je bila 1%; nakon testa je 9%. To je devetorostruko gora prognoza! Stvar je u tome da je originalna vjerojatnost bila dovoljno mala da ovakav test nije dovoljan da bi nas se uvjerio u prisutnost bolesti. Nesavršen test <em>pomiče</em> početnu vjerojatnost u nekom smjeru, ali točno koliki će biti taj pomak ovisi o pouzdanosti testa <em>i</em> o početnoj vjerojatnosti.</p><p class="normal">Poanta je da u ovim slučajevima ne smijemo gledati samo vjerojatnost da je test pogriješio, nego i učestalost svojstva na kojeg se testira u populaciji. Malo je vjerojatno da je test pokazao krivo, ali je još manje vjerojatno da je baš ta cura u stvari bila bolesna. Konačna vjerojatnost je kombinacija 90-postotne šanse da rezultat testa znači urođenu bolest i jedan-u-sto šanse da osoba koja se testira ima tu bolest.</p><p class="normal"><a href="http://en.wikipedia.org/wiki/Base_rate_fallacy">Zanemarivanje osnovne učestalosti</a> je česta logička pogreška koju ljudi čine u ovakvim situacijama. Jednostavno ignoriraju tu informaciju, vjerojatno zato što na pacijenta ne gledaju kao na &quot;statistiku&quot;, nego kao na pojedinca sa podjednakim potencijalom da bude i bolestan i zdrav.</p><h2>Zeleno-plavi taksi</h2><p class="normal">Za kraj, evo još jedan sličan problem:</p><blockquote><p class="normal">Istražujete prometnu nesreću koju je skrivio nepoznati taksi. U gradu postoji ukupno sto taksija: 85 ih je zelenih, a 15 plavih. Svjedok kaže da je to bio plavi taksi. Budući da je bio mrak, postoji 20-postotna mogućnost da svjedok krivo prepoznao boju, zamjenivši zelenu i plavu. Ako pretpostavimo da je svjedok iskren, kolika je šansa da je pogriješio, i da je taksi u stvari bio zelene boje?</p><!-- ... --></blockquote><p class="center"><button type="button" id="showTaxis" class="btn btn-default ">Pokaži objašnjenje</button></p><div id="Taxis" style="display: none;"><p class="normal">Pogledajte shemu. Prije nego što smo dobili izjavu svjedoka, smatrali smo da je jednaka vjerojatnost da je to bio bilo koji od sto taksija u gradu. 85 zelenih taksija i 15 plavih se dalje dijele na slučajeve kad je boja bila ispravno odnosno neispravno viđena. U krugu je boja kakvu ju je vidio svjedok i brojevi su raspoređeni tako da je 20% taksija krivo percipirana.</p><p class="center"><img src="//www.varljiv.org/i/graphic/taxis.png" class="img-responsive"/></p><p class="normal">Od 85 taksija zelene boje, 20% odnosno njih 17 bi svjedok krivo percipirao kao plave. Od 15 plavih taksija, njih 80% (12) svjedok bi ispravno prepoznao kao plave. Dakle, od ukupno 17 + 12 = 29 taksija koje svjedok prepoznaje kao plave, samo 12 je stvarno plave boje. Šansa da je svjedok u stvari vidio zeleni taksi je 17/29 = oko 59%. Vjerojatnije je da je nesreću skrivio neki zeleni taksi.</p><!-- ... --></div><p class="normal"><p id="shareline" class="cfull">
+    <fb:like send="true" layout="button_count" width="350" show_faces="false"></fb:like>
+    <g:plusone size="small" annotation="none"></g:plusone>
+    <span>
+      <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="varljiv">Tweet</a>
+      <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    </span>
+  </p></p><!-- ... --></div><!-- ... --></div><!-- ... --></div>
+    </article>
+    <div class="row" id="suggestions"><div class="col-md-3 col-sm-6 suggestion">
+          <a href="//www.varljiv.org/a/povratak-srednjim-vrijednostima">
+            <img height="100" width="100" class="square" src="//www.varljiv.org/it/a/povratak-srednjim-vrijednostima.jpg" title="Povratak srednjim vrijednostima" alt="Povratak srednjim vrijednostima"/>
+            <h3>Povratak srednjim vrijednostima</h3>
+            <p>Instruktori leta, kronični bolesnici, vrhunski sportaši - svi oni bili su žrtve jedne jednostavne statističke varke.</p>
+          </a>
+        </div><div class="col-md-3 col-sm-6 suggestion">
+          <a href="//www.varljiv.org/a/sally-clark">
+            <img height="100" width="100" class="square" src="//www.varljiv.org/it/a/sally-clark.jpg" title="﻿Tužni slučaj Sally Clark" alt="﻿Tužni slučaj Sally Clark"/>
+            <h3>﻿Tužni slučaj Sally Clark</h3>
+            <p>Dvije bebe umrle su u kući obitelji Clark. Njihova majka je optužena za dvostruko umorstvo. Protiv nje svjedoči varljiva statistika.</p>
+          </a>
+        </div><div class="col-md-3 col-sm-6 suggestion">
+          <a href="//www.varljiv.org/a/korelacija">
+            <img height="100" width="100" class="square" src="//www.varljiv.org/it/a/korelacija.jpg" title="﻿Korelacija" alt="﻿Korelacija"/>
+            <h3>﻿Korelacija</h3>
+            <p>Da li agresivniji igrači postižu više poena u košarci? Na primjerima iz doba Dražena Petrovića i Tonija Kukoča možemo testirati tu tezu.</p>
+          </a>
+        </div><div class="col-md-3 col-sm-6 suggestion">
+          <a href="//www.varljiv.org/a/zasto-ne-probas">
+            <img height="100" width="100" class="square" src="//www.varljiv.org/it/a/zasto-ne-probas.jpg" title="﻿Zašto ne probaš?" alt="﻿Zašto ne probaš?"/>
+            <h3>﻿Zašto ne probaš?</h3>
+            <p>Pitali su me: Okej, ne moraš mi odmah povjerovati, ali zašto ne pokušaš? Što imaš za izgubiti? Malo vremena, malo novca... A zamisli kako ćeš se osjećati ako uspije?</p>
+          </a>
+        </div></div>
+    <div>
+<div id="disqus_thread"></div>
+  <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'varljiv';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+  </div>
+    <footer>
+      <p class="tagline">Tekst 
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">
+          <img alt="Creative Commons Licence" style="border-width:0; display:inline" src="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png"/>
+        </a> <a href="/">//www.varljiv.org</a> 
+        (osim gdje je drugačije navedeno)
+        <br/>
+        Korištene i prilagođene ikone 
+        <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY</a> 
+        <a href="https://github.com/emojione/emojione/tree/2.2.7">EmojiOne 2.2.7</a>
+        <br/>
+        Kontakt: <a href="mailto:admin@varljiv.org">admin@varljiv.org</a>
+        <br/>
+      </p>
+    </footer>
+  </div>
+      <script src="//www.varljiv.org/js/jquery-3.1.1.min.js"></script><script src="//www.varljiv.org/js/bootstrap.min.js"></script><script type="text/javascript" src="//www.varljiv.org/js/e2f-common-0.2.js"></script><script type="text/javascript">$(e2fInit);</script><script type="text/javascript">var smile = "../i/icon/yellow-smiley.png";
+var ypf   = "../i/icon/gray-pface.png";
+var red   = "../i/icon/red-pface.png";
+var green = "../i/icon/green-frowny.png";
+var frown = "../i/icon/red-frowny.png";
+
+function row( head, y ) {
+  for ( i=0; i<=9; i++ ) {
+    var imgel = head.append( "<img id='c" + y + i + "' src='" + ypf + "'/>" );
+  }
+}
+
+function afterThinking() {
+  //TODO $("#radio").buttonset({'disabled': true});
+  $("#SkipRadio").hide();
+  $("#Step1").show( 900 );
+}
+
+function afterTest() {
+  $("#doTest").hide( 300 );
+  $("#Step2").show( 600 );
+  for ( r=0; r<=9; r++ ) {
+    for ( i=0; i<=9; i++ ) {
+    var face;
+    if (r === 0 && i === 9) face = frown;
+    else if ((r*2+i*7-r*i+2)%24%9 === 3) face = green;
+    else face = smile;
+       window.setTimeout( changeFace, r*770+i*88, $('#c'+r+i), face );
+    }
+  }
+  $.get("/tick/btest/afterTest");
+}
+
+function changeFace(x, f) {
+  $(x).attr('src', f);
+}
+
+function showTaxis() {
+  $("#showTaxis").hide();
+  $("#Taxis").show( 900 );
+  $.get("/tick/btest/showTaxis");
+}
+
+$(function(){
+  $("#radio").click(afterThinking);
+  for ( a=0; a<=100; a = a + 10 ) {
+    $("#a" + a).click(function() {
+      $.get("/tick/btest/a" + a);
+    });
+  }
+  for ( r=0; r<=9; r++ ) {
+    row( $("#faces"), r );
+    $("#faces").append("<br/>");
+  }
+  $("#c09").attr("src", red);
+  $("#SkipRadio").click(afterThinking);
+  $("#doTest").button().click(afterTest);
+  $("#showTaxis").button().click(showTaxis);
+});
+</script>
+    </body>
+    </html>
