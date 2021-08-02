@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Evolucija povjerenja: bilješke prevoditelja</title>
+	<link rel="icon" type="image/png" href="favicon.png">
+	<link rel="stylesheet" href="notes.css">
+    <link href="https://fonts.googleapis.com/css?family=Kavivanar" rel="stylesheet">
+</head>
+
+<body>
+<div id="notes">
+
+<h1>BILJEŠKE PREVODITELJA</h1>
+
+<p>Osim prijevoda i prilagodbe materijala da zvuči zanimljivije našim čitateljima, napravio sam i neke manje preinake sadržaja u cilju da ispravim konceptualne greške i da se bolje prenese suština <a href="https://en.wikipedia.org/wiki/The_Evolution_of_Cooperation">Axelrodovog rada</a>. Problemi s originalom su opisani <a href="https://github.com/ncase/trust/issues/48">na stranicama projekta</a>, ali autor originalnog rada ih nije još komentirao.</p>
+  
+<p>Ukratko, najveće konceptualne promjene se odnose na tri pitanja za koje se u originalu ne daju zadovoljavajući odgovori:</p>
+  
+<ol>
+  <li>Što je cilj ove igre?</li>
+  <li>Što je problem s racionalnom strategijom u igri?</li>
+  <li>Zašto surađivačke strategije ne evoluiraju u verzijama igre s malom nagradom za surađivanje?</li>
+</ol>
+
+<h3>Prvo malo teorije</h3>
+  
+<p>Iako nigdje ne navodi taj naziv, ovaj interaktivni esej objašnjava matematički model igre koja se zove <a href="https://en.wikipedia.org/wiki/Prisoner%27s_dilemma"><i>Prisoner's dillema</i></a>, iliti <b>Zatvorenikova dvojba</b>. (Točnije, prikazuje jedan oblik Zatvorenikove dvojbe koji se zove Donacijska igra.)</p>
+
+<p>Zatvorenikova dvojba je vrlo jednostavna igra u kojoj igrači imaju priliku da povuku jedan od dva poteza i ovisno o tome dobiju određenu isplatu. Postoji niz parametara koji se mogu podesiti, ali u srži: isplata za uspješnu prevaru (tzv. iskušenje) je veća od nagrade za uzajamnu suradnju, koja je veća od isplate za uzajamnu nesuradnju, koja je veća od isplate kad te netko prevari.</p>
+
+<p>Zatvorenikova dvojba je posebno zanimljiva igračka jer pokazuje kako se <b>suradnja može pojaviti u ekosustavu sebičnih jedinki</b>. Pokazalo se kako je ovaj model izuzetno koristan za opisivanje <a href="https://en.wikipedia.org/wiki/Prisoner%27s_dilemma#Real-life_examples">mnogih primjera iz stvarnog svijeta</a>.</p>
+  
+<h3>1. Cilj igre</h3>
+  
+<p>Cilj Zatvorenikove dvojbe je <b>dobiti što veću isplatu</b>. Ništa više i ništa manje od toga.</p>
+
+<p>Originalna verzija sugerira kako bi trebali razmišljati o tome jesmo li pravedni, imamo li više od drugog igrača, ili kako maksimizirati isplatu oba igrača. To je zbunjujuće i potpuno suprotno ideji teorije evolucije surađivanja i povjerenja. Agenti u ovoj igri su potpuno sebični i samo žele sebi povećati broj bodova (iako neki od njih mogu biti iracionalni u svojim strategijama). <i>Zbog toga što su sebični</i> počinju surađivati.</p>
+
+<h3>2. Problem sa Zatvorenikovom dvojbom</h3>
+
+<p>Originalna verzija kaže kako je problem sa Zatvorenikovom dvojbom to što varalice u njoj pobjeđuju. To definitivno <i>nije</i> problem. Zatvorenikova dvojba nema nikakve moralne brige. Ona se koristi za objašnjenje kako je moral nastao, i stoga prethodi zaključivanju o etici. Ako dozvolimo da naša moralna intuicija dođe do izražaja, promašili smo poantu vježbe.</p>
+  
+<p>Problem je što racionalni igrači u neiterativnim verzijama ove igre, u nepostojanju prisile na suradnju, odbijaju dobrovoljno surađivati i time <b>propuštaju veliku zaradu</b>. Tehnički to znači da postoji tzv. Nashov ekvilibrij koji sprječava realno bolji ishod za igrače. Problem je kako se igrači mogu sami "iskopati" iz tog ekvilibrija na obostranu korist.</p>
+
+<h3>3. Problem s premalom nagradom</h3>
+
+<p>Originalna verzija uvodi pojam <i>zero-sum</i> i <i>non-zero-sum</i> igara da objasni zašto je mala nagrada za uzajamnu suradnju nedovoljna. U igrama nultog zbroja s dva igrača ionako nema suradnje pa je koncept suvišan i zbunjujući.</p>
+  
+<p>Točan odgovor je da zatvorenikova dvojba treba nešto više od pozitivnog zbroja isplata: <b>nagrada za suradnju treba biti veća od očekivanog troška početne suradnje i opraštanja grešaka</b>.</p>
+  
+<hr>
+  
+<p>Prepravljena verzija je još uvijek daleko od idealne u teorijskom i didaktičkom smislu, no suzdržavao sam se od preopsežnih intervencija najviše zbog poštovanja prema originalu.</p>
+  
+<p style="text-align: right"><i>Hrvoje Šimić</i> <br> 8. rujna 2017.<br>
+<p>Molim komentare i ispravke na <a href="https://github.com/hrvojesimic/trust">Github stranicu projekta</a>.
+<br>Ili mi pišite na ime.prezime at gmail.com</p>

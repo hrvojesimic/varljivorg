@@ -1,0 +1,454 @@
+/* Varljiv mStory CSS - (c) 2017 varljiv.org */
+
+body {
+  text-align: center; width: 100%;
+  font-family: 'Merriweather', serif;
+  color: #333;
+}
+.container-fluid { padding: 0; }
+
+a { cursor: pointer; }
+a:link {text-decoration:none;}
+a:visited {text-decoration:none;}
+a:hover {text-decoration:underline;}
+a:active {text-decoration:underline;}
+
+.lead { color: #902; }
+
+p.option, p.option > input, p.option > label { cursor: pointer; }
+.btn {font-size: 17px;}
+
+p.normal {
+  margin-top: 1em;
+  line-height: 175%;
+}
+
+article {
+  text-align: left; font-size: 120%; 
+}
+h1, h2, h3 {
+  font-family: 'Lora', serif;
+  font-weight: 400;
+}
+article h1 { font-size: 300%; }
+
+article div.zor { width: 100%; min-height: 400px; }
+
+.subtitle { font-family: 'Open Sans', sans-serif; color:gray }
+section.bucket { font-family: 'Open Sans', sans-serif; color:gray; font-size: 90% }
+table { font-family: 'Open Sans', sans-serif }
+
+ul.nav { max-width: 100%; margin-left: auto; margin-right: auto}
+
+h1, h2, h3, p.center, p.right, p.normal, p.lead, blockquote, ul,ol, dl, .subtitle {
+  min-width: 100px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1, h2, h3, p.center, p.right, p.normal, blockquote, dl, .subtitle {
+  padding: 3px;
+}
+
+p.postsign {
+    text-align: center;
+    max-width: 450px;
+    font-size: 120%;
+    color: maroon;
+    border-top: solid;
+    border-bottom: solid;
+    font-family: Lora;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    line-height: 150%;
+    margin-left: auto;
+    margin-right: auto;  
+}
+
+div.quotable {
+  background-color: #eee;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  font-family: Lora;
+  font-size: 120%;
+  color: black;
+}
+div.quotable p.normal {
+  margin-top: 10px;
+}
+div.quotable .fa {
+  visibility: hidden;
+}
+div.quotable:hover .fa {
+  visibility: visible;
+  cursor: pointer;
+}
+div.quotable .fa-twitter {
+  color: lightskyblue;
+}
+div.quotable .fa-facebook {
+  color: dodgerblue;
+}
+
+@media all and (max-width: 600px) {
+  section#Side {
+    position: fixed; top:0; left:0; width: 100%; z-index: 55;
+  }
+  div.rightside {
+    max-width: 500px;
+    margin: auto;
+    margin-top: 500px;
+    z-index: 1;
+  }
+}
+
+@media all and (min-width: 601px) {
+  section#Side {
+    position: fixed; top:0; left:0; width: 45%; z-index: 0;
+  }
+  div.rightside {
+    max-width: 500px;
+    margin-left: 50%;
+    margin-right: auto;
+    z-index: 1;
+  }
+}
+
+
+nav {
+  margin: 5px; text-align: center; text-transform: uppercase;
+  border: dashed 1px gray; border-left-style: none; border-right-style: none;
+}
+.nav > li > a { color: gray; padding: 5px 10px 2px 10px; letter-spacing: 0.1em; font-weight: bold; }
+.nav a:hover { color: black; }
+.nav > li { position: relative; display: inline-block; }
+.nav-pills > li {float: none; }
+
+@media all and (min-width: 801px) {
+  header#small-header { text-align: left;
+    position: absolute; left: 10px; top: 10px; z-index: 100;
+  }
+}
+@media all and (max-width: 800px) {
+  header.noheader { text-align: left; margin: 10px }
+  header.yesheader {
+    position: absolute; left: 10px; top: 10px; z-index: 100;
+  }
+}
+
+img.elogo {
+  width: 7.5%; min-width: 40px; max-width: 160px;
+}
+
+div#disqus_thread, footer {
+  background: white;
+}
+
+#tagline {
+	color: gray;
+	font-style: italic;	font-family: 'Book Antiqua', Georgia, serif;
+}
+div#mc_embed_signup { text-align: center; }
+
+img.featured-img {
+	border: solid 1px gray; padding: 5px; width: 100%; height: auto;
+}
+.w32 img { width: 32px; height: 32px; }
+
+#features a { color: #333; font-weight: normal; text-decoration: none; margin: 10px }
+.feature-text { height: 10em; max-height: 10em; overflow: hidden }
+.featured-item, #siteintro { text-align: center; }
+.featured-item h2 { margin: 10px; }
+
+.feature-text:before {
+  content:'';
+  width:100%;
+  height:100%;    
+  position:absolute;
+  left:0;
+  top:0;
+  background:linear-gradient(rgba(255,255,255,0) 80%, white);
+}
+
+.artbanner { text-align: left; }
+.artbanner a { color: black; text-decoration: none; }
+
+img.square { 
+  padding: 5px; margin: 4px; border: solid 1px #999; float: left; margin-right: 8px;
+}
+a img.square:hover {
+  border-color: black; cursor: pointer;
+}
+
+.artbanner h2 { max-width: 100% }
+#suggestions { clear: both; background-color: white; padding: 10px; border: none; border-top: dashed 2px lightgray; padding-left: 0; margin-left: 0; margin-top: 25px; border-bottom: dashed 2px lightgray; margin-bottom: 15px; }
+#suggestions div.suggestion { height: 106px; max-height: 106px; overflow: hidden; }
+#suggestions div.suggestion h3 { display: flex; text-align: left; font-size: 105%; word-wrap: break-word; color: #333; padding-left: 0; margin-left: 0; margin-top: 2px; }
+#suggestions div.suggestion p { font-family: Tahoma, Arial, sans-serif; font-size: 90%; text-align: left; color: #666; text-decoration: none; }
+#suggestions > a:hover { color: black; text-decoration: none; }
+
+.clear { clear: both; }
+.clearleft { clear: left; }
+.clearright { clear: right; }
+.dropcap {
+  font-family: "Lora";
+  float: left;
+  margin-left: 0;
+  margin-right: 0.1em;
+  margin-top: 0.05em;
+  margin-bottom: 0;
+  font-size: 525%;
+  line-height: 90%;
+  font-weight: 700;
+}
+p.timestamp { text-align: right; font-size: 0.9em; font-style: italic; color: gray; margin-top: -20px; }
+p.datestamp { float: right;   font: .8em normal helvetica, sans-serif; color: gray; margin-top: -20px;}
+
+@media all and (max-width: 700px) {
+  .headimg         { margin: 0; padding: 0; max-width: 200% }
+  .headimg       * { margin-right: auto;    max-width: 200% }
+  .headimg.lhalf * { margin-left:    0  }
+  .headimg.mhalf * { margin-left:  -50% }
+  .headimg.rhalf * { margin-left: -100% }
+}
+@media all and (min-width: 701px) {
+  .headimg   { margin: 0; padding: 0; max-width: 100% }
+  .headimg * { margin-left: 0; margin-right: auto; max-width: 100% }
+}
+
+.cfull { padding: 0; max-width: 100%; text-align: center}
+.cfull * { margin-left: auto; margin-right: auto; display: inline }
+.cwide { padding: 0; max-width: 100%; text-align: center}
+.cwide * { margin-left: auto; margin-right: auto; display: block }
+
+.center { text-align: center; }
+.floatleft  { float: left;  margin: 0 0 10px 10px; padding: 2px;}
+.iconleft   { float: left;  margin: 20px 10px 0 0;               clear: both;}
+.floatright { float: right; margin: 0 0 10px 10px; padding: 2px; clear: both; }
+.boxright   { float: right; margin: 0;             padding: 2px; max-width: 350px; color: gray; }
+.ccaption { font: .8em normal helvetica, sans-serif; color: gray; text-align: center; }
+.rcaption { font: .8em normal helvetica, sans-serif; color: gray; text-align: right; }
+p.center img, p.right img, p.normal img, p.floatright img { display: inline; }
+
+@media all and (max-width: 700px) {
+	p.iconside { float: left; margin: 5px; }
+	p.iconside > img { width: 4em }
+}
+
+@media all and (min-width: 701px) {
+	p.iconside {
+	   position: relative;
+	   left: -5em;
+	   margin: auto;
+	   max-width: 600px;
+	   margin-bottom: -5em;
+	}
+	p.iconside > img { width: 4em }
+}
+.crossedout { text-decoration: line-through; }
+.multilineBtn { white-space: normal !important; }
+
+span.marker-yellow, span.marker-red, span.marker-green, span.marker-no {
+  padding: 3px 7px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;
+}
+span.marker-green { background: #070; color: white; }
+span.marker-no { background: #b00; color: white; }
+span.marker-yellow { background: #ffa; color: #800; border-style: solid; border-width: 1px }
+
+.colorGray { color: gray; }
+.colorLightGray { color: lightgray; }
+.colorRed { color: red; }
+.colorGreen { color: green; }
+.bgBlack { background: black } 
+
+.seriesbox {
+  font: .8em normal helvetica, sans-serif; color: #888;
+  background-image: url(images/vignettetop.jpg), url(images/vignettebtm.jpg);
+  background-position: center top, center bottom; background-repeat: no-repeat;
+  clear: both; float: right; 
+  margin: 20px 10px 20px 30px; padding: 40px 5px 40px 5px; max-width: 200px;
+}
+.seriesbox ul {
+  padding-left: 2em; list-style-type: square;
+}
+
+.unisubvideo { width: 640px; margin-left: auto; margin-right: auto; }
+
+blockquote p.normal {line-height: 150%;}
+
+blockquote {
+  font: .9em normal helvetica, sans-serif;
+  --margin: 10px 0px 10px 50px;
+  padding-left: 15px; border-left: 3px solid #ccc;
+}
+blockquote.bigq {
+  font: 1.2em Garamond, serif; 
+  padding-left: 50px; border-left: none;
+  background: transparent url(images/quote1.png) no-repeat; 
+}
+blockquote.vbigq {
+  font: 1.4em Garamond, serif; color: gray; line-height: 1.5em;
+  --margin: 1em 20px; border: none; padding-left: 50px;
+  background: transparent url(images/quote1.png) no-repeat; 
+}
+
+.fakelink { color: #666; cursor: pointer; }
+.fakelink:hover { color: white; background: #333; text-decoration: underline ; }
+
+ol#questions .answer, ol#questions .unit { display: none; }
+ol#questions li { margin-top: 1em; }
+
+span.popAnchor { border-bottom: 1px dashed; }
+span.popAnchor:hover { cursor: help; }
+div.popDiv p { margin: 0; }
+div.popDiv {
+  display: none; font-size: .8em; font-family:"Lucida Grande", Tahoma, Arial, sans-serif; color: black;
+  width: 400px; position: fixed; line-height: 1.4em; background: #ffc; border: 2px solid #666; padding: 5px; 
+}
+
+/* RANDOM NUMBERS BLOCK */
+#Blok td { font-size: 14px; line-height: 1em; font-family: sans-serif; padding: 0; color: #666; }
+#Blok .hi { background: yellow; color: #000; }
+#Blok table { margin: auto; }
+
+/* WASON CARDS */
+span.card  img{
+  margin: 15px; padding: 0px;
+  -webkit-box-shadow: 3px 3px 3px #999; 
+  -moz-box-shadow: 3px 3px 3px #999; 
+  box-shadow: 3px 3px 3px #999;
+}
+span.card:hover  img { cursor: pointer; }
+span.glowcard  img {
+  -webkit-box-shadow: 0px 0px 12px red; 
+  -moz-box-shadow: 0px 0px 12px red; 
+  box-shadow: 0px 0px 12px red; 
+  border: 2px solid red;
+  margin: 13px;
+}
+
+/* EQUATION TABLE */
+table.tableEquation { margin: auto; }
+table.tableEquation td { text-align: center; padding: 10px; }
+
+/* BOOK GALLERY */
+.book { display: inline-block; box-shadow: 5px 5px 20px #333; margin: 10px; }
+.book img { vertical-align: middle; }
+
+.csstransforms3d  .books {
+  -moz-perspective: 100px;
+  -moz-transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+}
+
+.csstransforms3d  .book {
+  position: relative;
+  -moz-perspective: 100px;
+  -NOmoz-transform: rotateY(-3deg);
+  -NOwebkit-transform: perspective(100) rotateY(-3deg);
+  outline: 1px solid transparent; /* Helps smooth jagged edges in Firefox */
+  box-shadow: none;
+  margin: 20;
+}
+
+.csstransforms3d  .book img {
+  position: relative;
+  max-width: 100%;
+}
+
+.csstransforms3d  .book:before,
+.csstransforms3d  .book:after {
+  position: absolute;
+  top: 2%;
+  height: 96%;
+  content: ' ';
+  z-index: -1;
+}
+
+.csstransforms3d  .book:before {
+  width: 100%;
+  left: 7.5%;
+  background-color: #5a2d18;
+  box-shadow: 5px 5px 20px #333;
+}
+
+.csstransforms3d  .book:after {
+  width: 5%;
+  left: 100%;
+  background-color: #EFEFEF;
+  box-shadow: inset 0px 0px 5px #aaa;
+  NO-moz-transform: rotateY(20deg);
+  NO-webkit-transform: perspective(100) rotateY(20deg);
+}
+
+.bookDetails { text-align: left; }
+.bookDetails .book { float: left; margin-right: 60px; }
+.bookDetails .title { font-size: 175%; margin: 0; }
+.bookDetails .subtitle { font-size: 100%; margin: 0; font-style: italic; }
+.bookDetails p.author { margin: 0; font-family: sans-serif; }
+.bookDetails .author span.fname { font-weight: bold; }
+.bookDetails li { font-size: 90%; font-family: sans-serif; line-height: 120%; list-style: square inside none; }
+
+#LincolnKennedy td, #LincolnKennedy th { margin: auto; text-align: center; }
+
+/* sliders */
+#Sliders {font-family: Verdana, Arial, "sans serif"; color: #666; font-size: .9em;}
+#Sliders span {padding: 5px;}
+#Sliders .slider {display: inline-block; width: 150px; padding: 0; }
+#Sliders .word {display: inline-block; width: 100px; color: black; font-style: italic;}
+#Sliders .ui-slider-handle  {color:black;}
+
+/* tweet button alignment hack */
+.twitter-share-button[style] { vertical-align: text-bottom !important; }
+
+
+.dialogue { text-align: right; }
+
+.dialogue > * { text-align: left; }
+
+.bubble-right {
+  font-family: 'Lora', serif;
+  text-align: right;
+  display: inline-block;
+  color: #700;
+  position: relative;
+  padding: 15px;
+  background: white;
+  border: #833 solid 1px;
+  margin-left: auto;
+  margin-right: 25%;
+  max-width: 500px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 2px 3px 0px rgba(194, 155, 155, 0.67);
+  -moz-box-shadow: 2px 2px 3px 0px rgba(194, 155, 155, 0.67);
+  box-shadow: 2px 2px 3px 0px rgba(194, 155, 155, 0.67);
+}
+
+.bubble-right:after {
+  content: "";
+  position: absolute;
+  top: 13px;
+  right: -15px;
+  border-style: solid;
+  border-width: 10px 0 10px 15px;
+  border-color: transparent white;
+  display: block;
+  width: 0;
+  z-index: 1;
+}
+
+.bubble-right:before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: -16px;
+  border-style: solid;
+  border-width: 11px 0 11px 16px;
+  border-color: transparent #833;
+  display: block;
+  width: 0;
+  z-index: 0;
+}

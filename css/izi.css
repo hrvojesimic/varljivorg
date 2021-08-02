@@ -1,0 +1,275 @@
+
+h1,h2,h4 {
+  font-family:'Essays 1743',Palatino,'Palatino Linotype','Book Antiqua',Georgia,'Times New Roman',serif;
+  font-weight:400;
+  text-shadow:0 0 1px #667;
+  --text-transform:uppercase;
+}
+
+body {
+  font: 1.1em 'Linux Libertine',Palatino,'Palatino Linotype','Book Antiqua',Georgia,'Times New Roman',serif;
+  margin: 0 auto;
+  max-width:960px;
+  padding-bottom:2em;
+  word-spacing:.1em;
+  list-style-type: disc;
+  line-height: 1.6em;
+}
+.ui-widget { font-size: .95em !important; }
+div#mainSection li {margin-left:2em !important; }
+div#mainSection p, h1, h2, h3, h4 {margin-bottom:10px;}
+div#mainSection h1, h2, h3, h4 {margin-top:20px;}
+
+a:link {text-decoration:none;}
+a:visited {text-decoration:none;}
+a:hover {text-decoration:underline;}
+a:active {text-decoration:underline;}
+
+p.nop {
+  padding: 0;
+  margin: 0;
+}
+
+span.popAnchor { color: #007; }
+span.popAnchor:hover { cursor: help; }
+div.popDiv p { margin: 0; }
+div.popDiv {
+  display: none;
+  font-size: .8em; font-family:"Lucida Grande", Tahoma, Arial, sans-serif;
+  width: 400px; position: fixed; 
+  background: #ffc; border: 2px solid #666; padding: 5px; 
+  color: black;	
+}
+
+span.marker-yellow, span.marker-red, span.marker-green, span.marker-no {
+  padding: 3px 7px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+span.marker-red { 
+  background: #fac; 
+  font-family: Georgia,'Times New Roman',serif;
+  letter-spacing: .1em;
+  font-weight: bold;
+  font-style: italic;
+}
+span.marker-green { background: #070; color: white; font-weight: bold; }
+span.marker-no { background: #b00; color: white; font-weight: bold; }
+span.marker-yellow { background: #ffa; color: #800; font-weight: bold; border-style: solid; border-width: 1px }
+
+span.inlinebtn{
+  margin:0 7px 0 0;
+  background-color:#f5f5f5;
+  border:2px solid #aaa;
+  border-top: #eee;
+  border-left: #eee;
+  -moz-border-radius: 9px;
+  -webkit-border-radius: 9px;
+  border-radius: 9px;
+    font-family:"Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
+    font-size:90%;
+    line-height:120%;
+    text-decoration:none;
+    font-weight:bold;
+    color:#565699;
+    cursor:pointer;
+    padding:5px 10px 6px 7px; /* Links */
+    width:auto;
+    overflow:visible;
+    padding:4px 10px 3px 7px; /* IE6 */
+}
+span.inlinebtn[type]{
+    padding:5px 10px 5px 7px; /* Firefox */
+    line-height:17px; /* Safari */
+}
+span.inlinebtn:hover {
+  background-color:#dff4ff;
+  border:2px solid #c2e1ef;
+  color:#336699;
+}
+span.inlinebtndown {
+  background-color:#6299c5;
+  border:2px solid #66b #aaf #aaf #66b;
+  color:#fff;
+}
+span.inlinebtn:active{
+  background-color:#6299c5;
+  border:2px solid #6299c5;
+  color:#fff;
+}
+
+img.square { 
+  padding: 5px;
+  margin: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #999; 
+}
+img.square:hover {
+  border-color: black;
+  cursor: pointer; 
+  border-width: 2px;
+  margin: 4px;
+}
+
+p.abox {
+  padding: 10px;
+  border-color: white;
+  border-style: solid;
+  border-width: 3px;
+  max-width: 300px;
+  display: table-cell;
+}
+p.agreen { background-color: #66dd66; }
+p.ared   { background-color: #ff9999; }
+p.agray  { background-color: #bbbbbb; }
+p.abox:hover { border-color: black; cursor: pointer; }
+span.alead {
+  font-size: 1.5em;
+  font-family: Arial;
+  font-weight: bold;
+  color: white;
+  display: table-cell;
+}
+span.atail {
+  font-family: Arial;
+  padding: .5em;
+  font-size: .85em;
+  display: table-cell;
+}
+
+.dropcap {
+  float: left;
+  width: .75em;
+  font-size: 3em;
+  line-height: 100%;
+}
+
+.center { text-align: center; }
+.right { text-align: right; }
+
+.floatright {
+  float: right;
+  margin: 0 0 10px 10px;
+  --border: 1px solid #aaa;
+  padding: 2px;
+}
+.floatleft {
+  float: left;
+  margin: 0 0 10px 10px;
+  padding: 2px;
+}
+
+blockquote {
+  font: .9em normal helvetica, sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 50px;
+  padding-left: 15px;
+  border-left: 3px solid #ccc;
+  line-height: 1.5em;
+}
+
+blockquote.bigq {
+  font:  1.1em Garamond, serif;
+  margin: 1em 20px;
+  padding-left: 50px;
+  background: transparent url(izi/quote1.png) no-repeat; 
+  border-left: none;
+}
+
+table#header {
+  width: 100%;
+}
+table#menu {
+  --width:960px;
+  border-spacing: 6px;
+  position: absolute;
+  top:0px;
+}
+table#menu td {
+  background: white;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+table#menu a {
+  text-decoration: none;
+  color: #777;
+}
+table#menu td:hover {
+  border: 1px solid red;
+  cursor: pointer;
+}
+table#menu a:hover {
+  color: black;
+}
+
+p.book-author {
+  --font-family: Palatino,'Book Antiqua',Georgia,'Times New Roman',serif;
+  font-family: Arial;
+  font-size: 1em;
+  margin: 0;
+}
+p.book-author span.family {  text-transform: uppercase; }
+.book-title {
+  --font-family:'Essays 1743',Palatino,'Palatino Linotype','Book Antiqua',Georgia,'Times New Roman',serif;
+  font-family: Arial;
+  font-size: 1.5em;
+  margin: 0;
+}
+.book-subtitle {
+  font-family:'Essays 1743',Palatino,'Palatino Linotype','Book Antiqua',Georgia,'Times New Roman',serif;
+  font-size: 1em;
+  font-style: italic;
+  margin: 0;
+}
+table#bib { width: 50% }
+table#bib img { border: solid 1px black; margin: 5px; }
+table#bib td { vertical-align: top; }
+
+p.talk-title {
+  font-family: Arial;
+  font-size: 1.25em;
+  margin: 0;
+}
+p.talk-title a { text-decoration:none }
+p.talk-author {
+  font-family: Arial;
+  font-size: 0.85em;
+  color: gray;
+  margin: 0;
+}
+
+span.card {
+  font-family: Arial;
+  font-size: 2em;
+  color: gray;
+  width: 30px;
+  margin: 5px;
+  border: solid 2px black;
+  padding: 10px;
+}
+span.card:hover { cursor: pointer; }
+
+div#mainSection{ margin: 15px; }
+
+div#nav { min-width: 900px; }
+#nav li { padding:15px 16px; float:left; border-left:0; border-right:2px dotted #bbb; position:relative }
+#nav ul { width:570px; float:right; margin:auto; height:50px; padding:25px 0; list-style:none; border: none; }
+#nav a { font-family: "Book Antiqua", Georgia, Times, "Times New Roman", serif; display:block; font-weight:bolder; color:#555; font-size:0.9em; text-decoration: none; }
+#nav a:hover { color:#b55; }
+
+img.icon { float:left; margin:0 15px 10px 0 !important; border:0 !important; padding:0 !important }
+
+.box-sections { width:250px; min-height:150px; float:left; margin:30px 45px 0 0; text-decoration:none; }  
+.box-sections h3 { line-height:60px; margin:0 !important } 
+.box-sections h5 { margin:0 0 10px !important; font-size:1.7em }
+.box-sections p { clear:both; font-size:0.8em } 
+.box-sections img.thumb { width:262; height:139px; padding:3px; border:1px solid #ccc }
+.box-sections span { color:#244455 }
+.box-sections .last { margin-right:0 }
+.box-sections a:link {text-decoration:none; color: black;}
+.box-sections a:visited {text-decoration:none; color: black;}

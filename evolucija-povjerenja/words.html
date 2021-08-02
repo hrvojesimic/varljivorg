@@ -1,0 +1,1222 @@
+<!--
+
+THIS FILE HAS ABOUT 3,300 WORDS TO TRANSLATE
+
+TRANSLATION NOTES:
+
+When translating this thing, only edit the stuff that's BETWEEN the <tags>, like so:
+
+    <p id="still_english">hello</p>
+    =>
+    <p id="still_english">bonjour</p>
+
+Also, DON'T change anything between the [square brackets], like so:
+
+    Number #[N]
+    =>
+    Numero #[N]
+
+Exception to the "don't change tags" rule:
+Feel free to move around the italics & bold tags, so that the emphasis
+on the right phrases/words still makes sense!
+
+    <i>italics</i>
+    <b>bold</b>
+
+Also, some HTML weirdness you might want to know:
+
+    &amp; is an ampersand "&" sign
+    &#8226; is a dot
+    &rarr; is a rightward-facing arrow
+    &lt; is a "<" sign
+
+ALSO! I'd love for you to credit yourself as a translator!
+You can add your own name in the <p id="subtitle"> section
+
+Thanks again!
+~ Nicky Case
+
+-->
+
+<!-- - - - - - - - - - - - - - - - - -->
+<!-- - - - - - META STUFF - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - -->
+
+<p id="meta_title">
+Evolucija povjerenja
+</p>
+<p id="meta_desc">
+interaktivni vodič kroz teoriju igara &mdash; zašto i kako vjerujemo jedni drugima
+an interactive guide to the game theory of why &amp; how we trust each other
+</p>
+<p id="meta_loading">
+učitavanje u tijeku...
+</p>
+<p id="meta_on">
+ON
+</p>
+<p id="meta_off">
+OFF
+</p>
+
+
+<!-- - - - - - - - - - - - - - - - - -->
+<!-- - - - - - TITLE! - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - -->
+
+<p id="title">
+EVOLUCIJA<br>
+<span style="font-size:1.25em">POVJERENJA</span>
+</p>
+<p id="subtitle">
+
+trajanje: 30 min &#8226; autor: nicky case, lipanj 2017
+
+<!-- TRANSLATION NOTE: UNCOMMENT THE FOLLOWING & ADD YOUR OWN NAME! -->
+
+<br>
+preveo i <a href="notes/biljeske.html">prilagodio</a>: hrvoje šimić
+&#8226;
+<a href="http://ncase.me/trust/">originalna verzija</a>
+
+</p>
+
+<p id="loading">
+učitavam...
+</p>
+<p id="loading_done">
+IDEMO? &rarr;
+</p>
+
+<!-- - - - - - - - - - - - - - - - - -->
+<!-- - - - - - INTRO! - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - -->
+
+<p id="intro">
+Tijekom Prvog svjetskog rata izbio je mir.
+<br><br>
+
+Bilo je to za Božić 1914. na Zapadnoj fronti. Usprkos strogim naredbama<br>
+da se ne druže s neprijateljem, britanski i njemački vojnici su napustili svoje rovove,<br>
+prešli ničiju zemlju i sastali se da pokopaju mrtve, razmijene poklone, igraju igre.
+<br><br>
+
+Sad je 2017. Na Zapadu je mir već desetljećima, ali smo slabi s povjerenjem.<br>
+Studije pokazuju kako kroz zadnjih 40 godina sve manje i manje ljudi vjeruje jedno<br>
+drugom. Zato se pitamo:
+<br><br>
+
+<b>Zašto, čak i u doba mira, postajemo neprijatelji jedni drugima?<br>
+I zašto, čak i u ratu, neprijatelji postaju prijatelji?</b>
+<br><br>
+
+Mislim kako <b>teorija igara</b> može pomoći objasniti tu epidemiju nepovjerenja &mdash;<br>
+i kako je možemo ispraviti. Da bi bolje razumijeli...
+</p>
+<p id="intro_button">
+...zaigrajmo igru. &rarr;
+</p>
+
+<!-- - - - - - - - - - - - - - - - - -->
+<!-- - - - - - ONE OFF! - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - -->
+
+<p id="label_you_cooperate">
+ti<br>surađuješ
+</p>
+
+<p id="label_you_cheat">
+ti<br>varaš
+</p>
+
+<p id="label_they_cooperate">
+oni<br>surađuju
+</p>
+
+<p id="label_they_cheat">
+oni<br>varaju
+</p>
+
+<p id="label_you">
+ti<br>↙
+</p>
+<p id="label_them">
+drugi igrač<br>↘
+</p>
+
+<p id="oneoff_0_top">
+
+<b style="font-size: 125%">IGRA POVJERENJA</b><br>
+Ispred tebe je stroj. 
+Ako staviš novčić u stroj, <i>drugi igrač</i> će dobiti tri novčića.
+Ako on stavi novčić, stroj će <i>tebi</i> izbaciti tri.
+Možeš ili SURAĐIVATI (ako staviš novčić) ili VARATI (ako ga ne staviš).
+<b>PAZI: cilj igre je samo ŠTO VIŠE ZARADITI.</b>
+</p>
+
+<p id="oneoff_0_btm">
+<b>Pretpostavit ćemo kako je drugi igrač varalica: neće staviti novčić.</b><br>
+Igrat ćete samo jednom. Što ćeš ti napraviti?
+</p>
+
+<p id="oneoff_1_cheated">
+Tako je! Zašto bi se škrtac obogatio na tvoj trošak?
+</p>
+
+<p id="oneoff_1_cooperated">
+Ajoj, okrenuo si drugi obraz i dobio pljusketinu!
+</p>
+
+<p id="oneoff_1_top">
+Ako surađuješ dok druga strana vara, izgubit ćeš svoj novčić a nećeš ništa dobiti (zarada: -1).
+Međutim, ako obojica varate, nećeš ni dobiti ni izgubiti ništa (zarada: 0).
+Nula je bolje od minus jedan. <b>Stoga je bolje VARATI.</b>
+</p>
+
+<p id="oneoff_1_btm">
+<b>Sad recimo da druga strana surađuje, i da će staviti novčić.</b><br>
+Što bi ti trebao?
+</p>
+
+<p id="oneoff_2_cheated">
+Uf, jesi zločest... ali si u pravu!
+</p>
+
+<p id="oneoff_2_cooperated">
+Ha da, zvuči kao da si postupio ispravno... <b>ILI MOŽDA NISI!?</b>
+</p>
+
+<p id="oneoff_2_top">
+Ako obojica surađujete, potrošit ćete jedan novčić da dobijete tri (zarada: +2). Ali ako ti varaš a on surađuje, zaradit ćeš tri novčića bez da si potrošio ijedan (rezultat: +3). Tri je više od dva.
+<b>Zaključak: opet bi trebao VARATI.</b>
+</p>
+
+<p id="oneoff_2_btm">
+Dakle, bez obzira što je drugi igrač namjeravao napraviti,
+nama se više isplati zadržati naš novčić za sebe.
+Pogledajmo još kako će razmišljati...
+</p>
+
+<p id="oneoff_button_next1">
+...drugi igrač?
+</p>
+
+<p id="oneoff_3_top">
+Igra je potpuno simetrična, pa je svejedno s koje strane stroja prilazimo.
+Zato će on, ako je razuman, primjeniti istu strategiju.
+<b>Oba razumna igrača će VARATI.</b>
+Nitko neće zaraditi ni kinte.
+Zbog nemogućnosti da drugu stranu prisilimo da surađuje,
+zapeli smo na nuli.
+</p>
+
+<p id="oneoff_3_btm">
+I time smo propustili zaraditi po dva novčića svaki.
+Nije li to tragično? No, nije još sve izgubljeno.
+Pogledajmo sad što se događa ako istu igru zaigramo s istim igračem...
+</p>
+
+<p id="oneoff_button_next2">
+...više puta? &rarr;
+</p>
+
+<!-- - - - - - - - - - - - - - - - - -->
+<!-- - - - - - ITERATED - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - -->
+
+<p id="iterated_intro_top">
+<b>Sad igramo zapravo.</b>
+Igrat ćeš protiv pet različitih protivnika, svaki od njih će imati drugačiju "strategiju".
+Sa svakim protivnikom ćeš igrati od tri do sedam rundi. (Nećeš znati kad je zadnja runda.) Možeš li im vjerovati? I mogu li oni vjerovati <i>tebi</i>?
+</p>
+
+<p id="iterated_intro_btm">
+Odaberi prvi pravi potez. <b>Biraj pametno.</b>
+</p>
+
+<p id="iterated_info_1">
+protivnik: [X]. od [Y]
+</p>
+</p>
+<p id="iterated_info_2">
+Zarada dosad: 
+</p>
+
+<p id="iterated_score_start">
+Ukupno si zaradio...
+</p>
+<p id="iterated_score_1">
+što je doista <i>impresivno</i> loše.
+</p>
+<p id="iterated_score_2">
+moglo je biti i gore!
+</p>
+<p id="iterated_score_3">
+što nije loše!
+</p>
+<p id="iterated_score_4">
+što je prilično dobro!
+</p>
+<p id="iterated_score_5">
+što je <i>savršeno!</i> Čestitam što imaš toliko slobodnog vremena.
+</p>
+<p id="iterated_score_x">
+...nemam pojma što si to napravio.
+</p>
+<p id="iterated_score_end">
+(najniži mogući rezultat je 7, najviši 49)
+</p>
+
+<p id="who_were">
+Tko su bili ovi čudni likovi protiv kojih si igrao?
+</p>
+
+<p id="character_tft">
+<b>MILO ZA DRAGO:</b>
+Bok! Ja prvo surađujem, a onda tebi radim što god si ti meni napravio zadnji put.
+</p>
+
+<p id="character_all_d">
+<b>VJEČITA VARALICA:</b>
+<i>snažni će zgaziti slabe</i>
+</p>
+
+<p id="character_all_c">
+<b>VJEČITI SURAĐIVAČ:</b>
+Budimo najbolji prijatelji! ♡
+</p>
+
+<p id="character_grudge">
+<b>ZLOPAMTILO:</b>
+Čuj ti mene vamo. Ako'š surađivat' onda ću bit dobar. Al ako me <i>ikad</i> izdaš, onda ću ja tebe IZDAVAT DO KRAJA SVITA!
+</p>
+
+<p id="character_prober">
+<b>DETEKTIV:</b>
+Prvo ću te testirati. Na početku igram: Surađujem, Varam, Surađujem, Surađujem. Ako si me prevario bar jednom, igrat ću kao <span class="tft">Milo Za Drago</span>.
+Ako me ne prevariš, onda ću se ponašati kao <span class="all_d">Vječita Varalica</span>, kako bih te iskoristio.
+Elementarno, dragi moj Watsone.
+</p>
+
+<p id="characters_teaser">
+Što bi se dogodilo kad bi ovi likovi igrali...
+</p>
+<p id="characters_button">
+...jedan protiv drugog? &rarr;
+</p>
+
+
+<!-- - - - - - - - - - - - - - - - - -->
+<!-- - - - - TOURNAMENT! - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - -->
+
+<p id="place_your_bets">
+Vrijeme je za turnir!
+Svaki lik će igrati protiv svakog drugog lika:
+to je deset mečeva sa po deset rundi.
+<br><br>
+Za koga mislite da će dobiti najviši <i>ukupan</i> rezultat?
+<b>Dobro razmisli... i onda se OKLADI:</b>
+</p>
+
+<p id="tournament_intro">
+Okej, kladio si se na [CHAR]!
+Idemo kroz mečeve, jedan po jedan, i pogledajmo kako će se turnir odviti...
+</p>
+
+<p id="first_match">
+prvi meč &rarr;
+</p>
+
+<p id="next_match">
+sljedeći meč &rarr;
+</p>
+
+<p id="match_header_1">
+<b>Meč #[N]:</b> [A] protiv [B]
+</p>
+<p id="match_header_2">
+<b>Runde:</b>
+</p>
+<p id="match_header_3">
+<b>Ukupan rezultat:</b> [A] : [B]
+</p>
+
+<p id="tournament_1">
+E da, usput...
+</p>
+<p id="tournament_2">
+...možda si sumnjičav oko one priče o Božićnom primirju u rovovima Prvog svjetskog rata.
+To je sigurno bila iznimka?
+</p>
+<p id="tournament_3">
+Pa, primirje je bilo dramatično, ali nije bilo <i>ni jedinstveno, ni neobično</i>.
+</p>
+<p id="tournament_4">
+Nije se svaki rov priključio primirju, ali bilo je jako rašireno.
+Mnoge crte bojišnice su neovisno jedna od druge došle do iste ideje, <i>usprkos</i> izričitim, strogim naredbama da to ne rade.
+</p>
+<p id="tournament_5">
+Čak i prije Božića, nekoliko bojišnica su uspostavili
+neslužbeno, tajno primirje.
+</p>
+<p id="tournament_6">
+Zvali su ga <b>"živi i pusti druge da žive"</b>.
+Ako me ne upucaš, ni ja neću upucati tebe. I ovo je funkcioniralo, na mnogim mjestima!
+</p>
+<p id="tournament_7">
+Možda ste još uvijek skeptični. 
+Većina vojnika se ne sprijatelji spontano s neprijateljem.
+U čemu je fora s <i>rovovskim</i> ratovanjem? 
+</p>
+<p id="tournament_8">
+Evo što je posebno kod rovova:
+za razliku od većine drugih oblika ratovanja
+ovdje si suočen s <i>jednim te istim</i> neprijateljskim vojnicima svaki dan.
+</p>
+<p id="tournament_9">
+<b>Igra se ponavlja.</b> I to čini <i>sve</i> drugačijim.
+</p>
+<p id="tournament_10">
+No dobro. Pobjednik je...
+</p>
+
+<p id="the_winner_is">
+(molim bubnjeve...) &rarr;
+</p>
+
+<p id="tournament_winner_1">
+<b class="tft">MILO ZA DRAGO!</b>
+</p>
+<p id="tournament_winner_2_yay">
+Čestitke što si se kladio na pobjednika.
+</p>
+<p id="tournament_winner_2_nay">
+(Tvoj favorit je bio [CHAR].)
+</p>
+<p id="tournament_winner_3">
+<span class="tft">Milo Za Drago</span> ima mnogo imena.
+Zlatno Pravilo, recipročni altruizam, ili... <b>živi i pusti druge da žive.</b>
+Zato se "mir" pojavio iz rovova Prvog svjetskog rata:
+kad si prisiljen igrati istu igru s istim specifičnim ljudima
+(a ne samo generičkim "neprijateljem") ponovno i ponovno &mdash;
+<span class="tft">Milo Za Drago</span> ne pobjeđuje samo u bitci, nego dobija i cijeli rat.
+<br><br>
+Ali, ako se puno promijenilo kad smo igrali više rundi, što će se dogoditi ako igramo...
+</p>
+<p id="tournament_teaser">
+...više <i>turnira?</i> &rarr;
+</p>
+
+
+<!-- - - - - - - - - - - - - - - - - -->
+<!-- - - - - EVOLUTION! - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - -->
+
+<p id="evolution_intro">
+Sad pustimo da naša populacija igrača <i>evoluira kroz vrijeme</i>. To se radi u tri koraka:
+</p>
+<p id="evolution_intro_1">
+<b>1. IGRAJ TURNIR</b><br>
+Nek svi igraju protiv sviju. Zbroji koliko su dobili.
+</p>
+<p id="evolution_intro_2">
+<b>2. IZBACI LUZERE</b><br>
+Riješi se pet najgorih igrača. (ako je neriješeno, biraj nasumično među njima)
+</p>
+<p id="evolution_intro_3">
+<b>3. RAZMNOŽI POBJEDNIKE</b><br>
+Kloniraj pet najboljih igrača. (ako je neriješeno, biraj nasumično među njima)
+</p>
+<p id="evolution_intro_footer">
+...i PONOVI koliko god puta želiš.
+Pazi: ne moraš čekati da ljudi doslovno umru i dobiju djecu da bi kultura evoluirala &mdash;
+sve što treba je da "neuspješno" ponašanje izgubi na popularnosti, a da se "uspješno" ponašanje počne više oponašati.
+Pa, da vidimo...
+</p>
+<p id="evolution_intro_button">
+...što će se dogoditi. &rarr;
+</p>
+
+<p id="evo_1">
+Počnimo sa sljedećom populacijom igrača:
+<span class="all_c">15 Vječitih Surađivača</span>,
+<span class="all_d">5 Vječitih Varalica</span> i
+<span class="tft">5 Milo Za Drago</span>.
+(Zasad ignoriramo <span class="grudge">Zlopamtila</span> i <span class="prober">Detektiva</span>)
+<br><br>
+Odigrat ćemo turnir-eliminacija-razmnožavanje desetak puta.
+Ajmo se opet kladiti! Što misliš, tko će dobiti <i>prvi</i> turnir?
+<b>BIRAJ (OPET):</b>
+</p>
+
+<p id="evo_2_all_c">
+Ima smisla, <span class="all_c">Vječiti Surađivači</span> je trenutno najbrojnija strategija...
+</p>
+<p id="evo_2_all_d">
+Ima smisla, <span class="all_d">Vječite Varalice</span> imaju puno <span class="all_c">Vječitih Surađivača</span> za iskorištavanje...
+</p>
+<p id="evo_2_tft">
+Ima smisla, <span class="tft">Milo Za Drago</span> je pobijedio zadnji turnir, zašto ne bi opet?...
+</p>
+<p id="evo_2">
+Da vidimo jesi li u pravu:
+</p>
+
+<p id="label_play_tournament">
+1) igraj turnir
+</p>
+<p id="label_eliminate_bottom_5">
+2) eliminiraj pet najgorih
+</p>
+<p id="label_reproduce_top_5">
+3) razmnoži pet najboljih
+</p>
+
+<p id="evo_3_all_c">
+Nažalost, <span class="all_c">Vječiti Surađivači</span> su iskoristili 
+<span class="all_d">Vječite Varalice</span>, i sad im se broj povećao za pet.
+</p>
+<p id="evo_3_all_d">
+Nažalost, bio si u pravu! The <span class="all_d">Vječite Varalice</span> su najuspješnije, 
+i broj im se povećao za pet.
+</p>
+<p id="evo_3_tft">
+Nažalost, <span class="tft">Milo Za Drago</span> nije pobijedio &mdash; ali bar nisu nastradali kao
+<span class="all_c">Vječiti Surađivači</span>. Njih su iskoristili 
+<span class="all_d">Vječite Varalice</span>, i sad im se broj povećao za pet.
+</p>
+<p id="evo_3">
+Ali probajmo još par rundi...
+</p>
+
+<p id="evo_4">
+<span class="all_d">Vječite Varalice</span> se još uvijek šire
+na račun <span class="all_c">Vječitih Surađivača</span>...
+</p>
+
+<p id="evo_5">
+Eto, svi <span class="all_c">Vječiti Surađivači</span> su mrtvi.
+Al' ček...
+</p>
+
+<p id="evo_6">
+Tako je: <span class="all_d">Vječite Varalice</span> su postale žrtve vlastitog uspjeha!
+Nakon što su iskoristili sve <span class="all_c">Vječite Surađivače</span>,
+moraju se boriti s <span class="tft">Milo Za Drago</span>:
+koji <i>jesu</i> dobri, ali ne i naivni.
+</p>
+
+<p id="evo_7">
+Jednostavno oponašajući tuđe ponašanje,
+igrači <span class="tft">Milo Za Drago</span> međusobno surađuju,
+dok <span class="all_d">Vječite Varalice</span> samo varaju jedni druge!
+A <span class="tft">Milo Za Drago</span>
+pokazuje <span class="all_d">Vječitim Varalicima</span>
+kako je to biti prevaren.
+</p>
+
+<p id="evo_8">
+I tako, na kraju...
+</p>
+
+<p id="evo_9">
+...<span class="tft">Milo Za Drago</span> osvaja svijet.
+</p>
+<p id="evo_9_all_c">
+Iako si pogriješio s procjenom &mdash; dobri ali naivni <span class="all_c">Vječiti Surađivači</span>
+su bili osuđeni na propast &mdash; na kraju je <i>mudri</i> oblik dobrote prevladao,
+i <span class="all_d">Vječite Varalice</span> su istrijebljene.
+</p>
+<p id="evo_9_all_d">
+Kratkoročno gledajući, bio si u pravu &mdash; <span class="all_d">Vječite Varalice</span>
+su pobijeđivale na početku, ali su na kraju propali.
+</p>
+<p id="evo_9_tft">
+Dugoročno gledajući, bio si u pravu &mdash; <span class="tft">Milo Za Drago</span> je pobijedio!
+<span class="all_d">Vječite Varalice</span> su vodile na početku, ali su na kraju propali.
+</p>
+<p id="evo_9_end">
+Podsjeća me na citat:
+<br><br>
+<i>"Kazna dolazi od naših grijeha, a ne zbog njih."</i><br>
+~ Elbert Hubbard
+</p>
+<p id="evo_9_btn">
+(e, da...)
+</p>
+
+<p id="evo_10">
+(...sličan rezultat dobijemo i ako vratimo 
+<span class="grudge">Zlopamtilo</span> i <span class="prober">Detektiva</span> nazad:)
+</p>
+
+<p id="evo_autoplay">
+počni evoluciju!
+</p>
+<p id="evo_autoplay_stop">
+zaustavi evoluciju!
+</p>
+
+<p id="evo_10_followup">
+(Napomena: ponekad, nekoliko <span class="grudge">Zlopamtila</span> ostane,
+jer, kad su ostali samo <span class="grudge">Zlopamtila</span> i <span class="tft">Milo Za Drago</span> 
+imaju isti rezultat.)
+<br><br>
+Čini se kako matematika teorije igara nam govori nešto:
+filozofija <span class="tft">Milo Za Drago</span>,
+"Čini drugima onako kako oni tebi čine", možda nije samo
+<i>moralna</i>, nego i <i>matematička</i> istina.
+Međutim...
+</p>
+<p id="evo_10_btn">
+...postoji problem: &rarr;
+</p>
+
+<p id="evo_11">
+Pogledaj oko sebe. Svijet je pun kretena.
+<br><br>
+Ako je <span class="tft">Milo Za Drago</span> najbolja strategija za ovu ponavljanu igru povjerenja,
+toliko da su čak i vojnici u rovovima neovisno evoluriali sličnu strategiju, pod imenom "živi i pusti druge da žive" &mdash;
+zašto, onda, imamo toliko puno nepovjerljivih ljudi, i ljudi koji nisu vrijedni našeg povjerenja?
+Čemu ova epidemija nepovjerenja?
+<br><br>
+Možda je stvar u samoj rečenici: "za <i>ovu</i> ponavljanu igru povjerenja."
+Dosad smo samo mijenjali igrače:
+što ako <i>promjenimo igru?</i>
+Može li nas to dovesti do...
+</p>
+<p id="evo_11_btn">
+...evolucije <i>nepovjerenja?</i>
+</p>
+
+<!-- - - - - - - - - - - - - - - - - -->
+<!-- - - - - - DISTRUST - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - -->
+
+<p id="distrust_1">
+Prije nego što sve ode kvragu, počnimo s nečim lijepim!
+Evo svijet ispunjen s <span class="all_c">Vječitim Surađivačima</span>,
+osim jednog <span class="all_d">Vječitog Varalice</span> i jednog <span class="tft">Milo Za Drago</span>.
+<br><br>
+Iskoristi gumbe s desne strane da <b>START</b>aš simulaciju,
+idi kroz nju <b>korak po korak</b>, ili je <b>reset</b>iraj. &rarr;
+</p>
+
+<p id="distrust_2">
+Kao što već znamo, <span class="tft">Milo Za Drago</span> lako pobijeđuje na duge staze,
+pod trenutim pravilima!
+<br><br>
+Ali naša trenutna pravila kažu kako igrači igraju jedan protiv drugog
+deset rundi u svakom meču.
+Hoće li <span class="tft">Milo Za Drago</span> još uvijek pobjeđivati i ako se igra 7 rundi? 5 rundi? 3? 2? 1?
+<br><br>
+<b>Promijeni broj rundi</b> koristeći klizač dolje,
+onda pokreni simulaciju, pa ćemo vidjeti.
+Slobodno sam eksperimentiraj!
+</p>
+
+<p id="distrust_2_end">
+kad ti bude dosta eksperimentiranja, klikni na:
+</p>
+
+<p id="distrust_3">
+Kao što smo vidjeli, ako ne igraš dovoljno rundi (ovdje je trebalo bar pet)
+<span class="all_d">Vječita Varalica</span> dominira.
+<br><br>
+Kad su 1985. pitali amerikance koliko bliskih prijatelja imaju
+najčešći odgovor je bio "tri". 2004. najčešći odgovor je bio <i>"nula"</i>.
+Danas jednostavno imamo manje prijatelja.
+Kao što ste i sami otkrili,
+<b>što je manje ponovljenih interakcija, to se nepovjerenje više širi.</b>
+<br><br>
+(ne, mas-mediji se ne broje.
+potrebna je dvosmjerna interakcija među specifičnim pojedincima.)
+</p>
+<p id="distrust_3_btn">
+i da, postat će još gore... &rarr;
+</p>
+
+<p id="distrust_4">
+Evo <i>još jedan</i> način da uzgojimo nepovjerenje.
+Pogledajte isplate za igru povjerenja:
+</p>
+<p id="distrust_4_2">
+S normalnim isplatama, <span class="tft">Milo Za Drago</span> pobjeđuje.
+Ali sad, <b>promijenimo nagradu za uzajamno surađivanje s +2 na +1</b>
+i kliknite <b>START</b>.
+Iako je +1 još uvijek bolje <i>bolja</i> isplata nego kazna za uzajamno varanje (0)...
+što se događa?
+</p>
+<p id="distrust_4_note">
+slobodno se poigrajte s različitim isplatama!
+kad ste gotovi, kliknite na:
+</p>
+<p id="distrust_4_note_2">
+(simuliramo 10 rundi po meču)
+</p>
+
+<p id="distrust_5">
+Događa se ista stvar:
+s manjom nagradom za uzajamno surađivanje, <span class="all_d">Vječita Varalica</span> preuzima vodstvo. Problem je što ne postoji dovoljno poticaja za suradnju.
+<br><br>
+Ne samo da tablica isplata treba biti takva da se surađivanje mora isplatiti, nego i 
+<b>nagrada za suradnju mora biti dovoljno velika da bi se zbog nje isplatilo riskirati</b> pokušavajući stvoriti <i>win-win</i> ishod.
+Bez znatnog pozitivnog ishoda za obje strane, <i>povjerenje ne može evoluirati</i>.
+<br><br>
+Na kraju, pogledajmo i treću prepreku u evoluciji povjerenja...
+</p>
+<p id="distrust_5_btn">
+<s>Grekše</s> Greške. &rarr;
+</p>
+
+<!-- - - - - - - - - - - - - - - - - -->
+<!-- - - - - - NOISE! - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - -->
+
+<p id="noise_1">
+Koliko god da je <span class="tft">Milo Za Drago</span> super, ima ogromnu, fatalnu slabost koju još nismo spomenuli.
+Da biste je razumjeli, pretpostavimo da dva <span class="tft">Milo Za Drago</span> igrača, Milo i Drago, igraju jedan protiv drugog:
+</p>
+<p id="noise_1_end">
+Budući da su dobrice, obojici će prvi potez biti:
+</p>
+
+<p id="noise_2">
+I tako njih dvojica skladno surađuju, pjevajući "Kad se male ruke slože" do kasno u noć.
+</p>
+<p id="noise_2_end">
+Ali što ako se nešto dogodi dok Mile pokušava biti dobar...
+</p>
+
+<p id="noise_3">
+<b>O, NE!</b>
+<br>
+Greške, nesporazumi, krive interpretacije &mdash; nesreće se stalno događaju u stvarnom životu. Ništa strašno.
+</p>
+<p id="noise_3_end">
+Ali što ako Drago ne misli da je to bila samo nezgoda...
+</p>
+
+<p id="noise_4">
+<b>O, NE! PUTA DVA!</b>
+<br>
+Drago, zato što mu je strategija <span class="tft">Milo Za Drago</span>, <i>morao</i> je uzvratiti na varanje...
+</p>
+<p id="noise_4_end">
+...ali i Mile, iz istog razloga, se sad <i>mora</i> osvetiti njemu...
+</p>
+
+<p id="noise_5">
+I tako se zavada dva igrača <span class="tft">Milo Za Drago</span>
+vrti u neprestanom krugu osvete...
+koja je počela zbog samo jedne davne greške.
+</p>
+<p id="noise_5_end">
+Tragično! No evo nam nekih igrača koji bi mogli...
+</p>
+<p id="noise_5_btn">
+...nositi se s greškama &rarr;
+</p>
+
+<p id="noise_characters">
+Upoznajmo nove face! (ili barem nove šešire)
+</p>
+
+<p id="character_tf2t">
+<b>MILO ZA DUPLO DRAGO:</b><br>
+Bok! Ja sam kao <span class="tft">Milo Za Drago</span>,
+s tom razlikom da ću ja tebe prevariti samo ako si me prevario zadnja <i>dva</i> puta.
+Inače surađujem, jer prvi put je moglo bilo slučajno!
+</p>
+
+<p id="character_pavlov">
+<b>TUPSON:</b><br>
+ej. ja prvo suradnja.
+ako ti isto suradnja, ja ponavljam svoj <i>prethodni potez</i>, čak i pogrešku.
+ako ti varaš, ja mijenjam svoj <i>prethodni potez</i>, čak i pogrešku.
+</p>
+
+<p id="character_random">
+<b>NERED:</b><br>
+<i>Majmun robot! Nindža pizza takosi! lol baš sam random</i><br>
+(Nasumično Surađuje ili Vara, s jednakom vjerojatnošću.)
+</p>
+
+<p id="noise_characters_end">
+Okej, da vidimo kako se ovi likovi snalaze...
+</p>
+<p id="noise_characters_btn">
+...u turniru &rarr;
+</p>
+
+<p id="noise_evo_1">
+Krenimo s dvanaest
+<span class="all_c">Vječitih Surađivača</span>,
+protiv starog pobjednika, pravednog <span class="tft">Milo Za Drago</span>,
+i tri nova lika:
+opraštajućeg <span class="tf2t">Milo Za Duplo Drago</span>,
+nesofisticiranog <span class="pavlov">Tupsona</span>,
+i blesavog <span class="random">Nereda</span>.
+<br><br>
+Svaku rundu igrači imaju malu šansu da će pogriješiti. (recimo 5%)
+Za koga mislite da će biti najuspješniji?
+<b>Pažljivo razmisli i onda pristupi KLAĐENJU:</b>
+</p>
+
+<p id="noise_evo_2">
+Dobro, ti se kladiš na [CHAR]. Vidit ćemo...
+Koristi gumbe na lijevoj strani da bi pokrenuo simulaciju ili išao kroz nju korak po korak.
+</p>
+<p id="noise_evo_2_2_correct">
+Imao si pravo &mdash; 
+</p>
+<p id="noise_evo_2_2_incorrect">
+Bio si blizu &mdash;
+</p>
+<p id="noise_evo_2_2">
+<span class="pavlov">Tupson</span> pobjeđuje!
+To je zato što je <span class="pavlov">Tupson</span> u stanju iskoristiti <span class="all_c">Vječitog Surađivača</span>. Oboje počnu surađivati, ali ako <span class="pavlov">Tupson</span> tupson pogriješi i prevari <span class="all_c">Vječitog Surađivača</span>, koji se nikad ne osvećuje, 
+<i>nastavit će dalje s varanjem</i>.
+</p>
+<p id="noise_evo_2_2_btn">
+Pokušajmo sad...
+</p>
+
+<p id="noise_evo_3">
+...istu stvar kao i prije, samo umjesto pola populacije <span class="all_c">Vječitih Surađivača</span>,
+imamo pola populacije <span class="all_d">Vječitih Varalica</span>. Ovo je puno <i>manje</i> opraštajuća,
+<i>više</i> neprijateljska okolina.
+<br><br>
+Što misliš, tko će sad pobijediti? <b>Razmisli, pa se KLADI:</b>
+</p>
+
+<p id="noise_evo_4">
+Kladio si se na [CHAR]. Ponovno pokreni simulaciju...
+</p>
+<p id="noise_evo_4_2_correct">
+Imao si pravo &mdash;
+</p>
+<p id="noise_evo_4_2_incorrect">
+Dobar pokušaj, ali netko drugi je pobijedio &mdash;
+</p>
+<p id="noise_evo_4_2">
+<span class="tf2t">Milo Za Duplo Drago</span> je ovaj put bila pobjednička strategija!
+Iznenađujuće kako s još <i>zločestijom</i> početnom populacijom,
+<span class="tf2t">Milo Za Duplo Drago</span>,
+koji je <i>više opraštajuća</i> verzija <span class="tft">Milo Za Drago</span>,
+bila još uspješnija! (pazi: <span class="tf2t">Milo Za Duplo Drago</span> je toliko opraštajuća da čak
+ne potuče <span class="tft">Milo Za Duplo Drago</span> u potpunosti. dijeli životni prostor s njim)
+<br><br>
+U ovom slučaju, malo "gluhog telefona" (5% šanse za pogrešku u svakoj rundi)
+može dovesti do više <i>opraštanja</i>. No, da li je to istina za <i>sve</i> razine...
+</p>
+<p id="noise_evo_4_2_btn">
+...krive komunikacije?
+</p>
+
+<p id="noise_evo_5">
+<b>Iskoristi kliznik dolje da promjeniš razinu "šuma" u komunikaciji, i onda klikni START.</b>
+Na 5%, <span class="tf2t">Milo Za Duplo Drago</span> pobjeđuje.
+Što se dogodi na 0%? Ili 20%? Ili 50%? 
+(50% je najviše, jer kad dođemo do te razine, informacija se potpuno izgubi u šumu.)
+</p>
+<p id="noise_evo_5_continue">
+Kad si gotov, klikni:
+</p>
+
+<p id="noise_evo_6">
+Rezultati su otprilike ovakvi:<br>
+<b>Na 0%,</b> pošteni <span class="tft">Milo Za Drago</span> pobjeđuje!
+<b>Od 1% do 9%,</b> opraštajući <span class="tf2t">Milo Za Duplo Drago</span> pobjeđuje!
+<b>od 10% do 49%:</b> nepošteni, neopraštajući <span class="all_d">Vječiti Varalica</span> pobjeđuje.
+<b>Na 50%,</b> <i>nitko nije pobjednik</i>, sve je slučajnost.
+<br><br>
+Zato je šum u komunikaciji tako interesantna prepreka povjerenju:
+<i>malo</i> šuma vodi opraštanju,
+ali <i>previše</i> vodi gubitku povjerenja!
+Mislim kako je današnja medijska tehnologija,
+koliko god nam je pomogla da bolje komuniciramo,
+povećala je i <i>šum</i> u komunikaciji.
+<br><br>
+Na kraju, poigrajmo se sa <i>svim</i> parametrima, koristeći gumbiće i kliznike.
+Isprobajmo...
+</p>
+<p id="noise_evo_6_btn">
+...igraonicu!
+</p>
+
+
+<!-- - - - - - - - - - - - - - - - - -->
+<!-- - - - - - SANDBOX! - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - -->
+
+<p id="sandbox_population">
+Počnimo s ovom razdiobom igrača:
+</p>
+
+<p id="sandbox_payoffs">
+Isplate u igri jedan-na-jedan su:
+</p>
+<p id="sandbox_reset_payoffs">
+resetiraj
+</p>
+
+<!--
+When translating the following, keep the "[N]", with square brackets,
+as a placeholder for the number. Some of these need double-translations,
+one for the plural version, one for the singular version.
+-->
+
+<p id="sandbox_rules_1">
+Igraj [N] rundi po meču:
+</p>
+<p id="sandbox_rules_1_single">
+Igraj [N] rundu po meču:
+</p>
+
+<p id="sandbox_rules_2">
+Nakon svakog turnira, izbaci najgorih [N] igrača i umnoži najboljih [N] igrača:
+</p>
+<p id="sandbox_rules_2_single">
+Nakon svakog turnira, izbaci najgoreg [N] igrača i umnoži najboljeg [N] igrača:
+</p>
+
+<p id="sandbox_rules_3">
+Tijekom svake runde, postoji [N]% šansa da će igrač pogriješiti:
+</p>
+
+<p id="sandbox_end">
+<b>PAŽNJA: Igraonica je potpuno neobavezna.</b>
+Slobodno je možete preskočiti, ili se igrati do mile volje! Kad budete gotovi, popričajmo...
+</p>
+<p id="sandbox_end_btn">
+što smo danas naučili! &rarr;
+</p>
+
+
+
+<!-- - - - - - - - - - - - - - - - - -->
+<!-- - - - - CONCLUSION! - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - -->
+
+<p id="conclusion_0">
+Teorija igara nam je pokazala kako postoje tri preduvjeta da bi povjerenje moglo evoluirati u populaciji sebičnih jedinki:
+</p>
+<p id="conclusion_1_a">
+1. PONOVNI SUSRETI
+</p>
+<p id="conclusion_1_a2">
+Povjerenje održava veze među ljudima,
+ali mora postojati mogućnost ponovnog sureta <i>prije</i> nego što odlučimo imati povjerenje u drugu osobu.
+</p>
+<p id="conclusion_2_a">
+2. ZAJEDNIČKI INTERES
+</p>
+<p id="conclusion_2_a2">
+Moramo igrati igru u kojoj je moguće da <i>oba</i> igrača zarade dovoljno da im se isplati riskirati da ponekad budu preveslani.
+</p>
+<p id="conclusion_3_a">
+3. NIZAK ŠUM
+</p>
+<p id="conclusion_3_a2">
+Ako je šum u komunikaciji <i>previsok</i>, povjerenje nestaje.
+Ali kad ima malo šuma, isplati se <i>više</i> opraštati.
+</p>
+<p id="conclusion_4">
+Naravno, na povjerenje u stvarnom svijetu utječe još puno stvari.
+Ugled, dijeljene vrijednosti, ugovori, kultura, bla bla bla. I ne zaboravimo...
+</p>
+<p id="conclusion_btn">
+...<i>najveću</i> lekciju. &rarr;
+</p>
+
+<p id="outro_1">
+Ako postoji samo jedna velika pouka<br>
+koju možemo naučiti od teorije igara, to je ovo:
+<br><br>
+<b>Pravila igre određuju ponašanje igrača.</b><br>
+Problem današnjice nije da ljudi gube povjerenje jedni u druge,<br>
+nego da je naša <i>okolina</i> takva da ne potiče međusobno povjerenje.
+<br><br>
+Možda vam zvuči cinično i naivno &mdash; da smo samo proizvod svoje okoline &mdash;
+no teorija igara nas podsjeća i kako smo <i>mi</i> okolina jedni drugima.<br>
+<b>Kratkoročno, igra određuje igrače. No dugoročno, igrači određuju igru.</b>
+<br><br>
+Napravi što možeš da stvoriš uvjete koji potiču povjerenje.
+Izgradi odnose s drugima. Pronađi <i>win-win</i> situacije. Smanji šum u komunikaciji.
+Možda ćemo onda prestati pucati jedni na druge, izaći iz svojih rovova, preći Ničiju zemlju kako bi se sastali...
+</p>
+
+<p id="outro_1_btn">
+i shvatili...
+</p>
+
+<p id="outro_2">
+...kako živjeti i pustiti druge da žive.
+</p>
+
+<p id="outro_2_credits">
+"Božićno primirje između protivničkih rovova"
+Ilustrirao AC Michael.
+Objavljeno u <i>The Illustrated London News</i>, 9. siječnja 1915.
+</p>
+
+<p id="outro_2_btn">
+♡
+</p>
+
+<!-- - - - - - - - - - - - - - - - - -->
+<!-- - - - - - CREDITS! - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - -->
+
+<p id="credits">
+<span class="credits">
+
+napravio:<br>
+<span class="big">NICKY CASE</span><br>
+<a href="http://ncase.me/" target="_blank">vidi što sam još napraivio</a>
+•
+<a href="https://twitter.com/ncasenmare" target="_blank">prati me na tweeteru</a>
+<br>
+<a href="https://github.com/ncase/trust/#play-it-here-httpncasemetrust" target="_blank">skini glazbu i izvorni kod</a>
+
+<span class="divider"></span>
+
+bazirano na knjizi roberta axelroda iz 1984-te<br>
+<span class="big">"THE EVOLUTION OF COOPERATION"</span><br>
+<a href="notes" target="_blank">autorove bilješke (na engleskom)</a>
+•
+<a href="notes/biljeske.html" target="_blank">bilješke prevoditelja (na hrvatskom)</a>
+
+<span class="divider"></span>
+
+puno ljubavi i zahvale<br>
+<span class="big">MOJIM PODRŽAVAČIMA NA PATREONU</span><br>
+<a href="peeps" target="_blank">vidi kako sam ih nacrtao</a>
+•
+<a href="https://www.patreon.com/ncase" target="_blank">obaspi me novčićima na patreonu &lt;3</a>
+
+<span class="divider"></span>
+
+p.s: želiš još učenja uz igru?<br>
+pogledaj 
+<a href="http://explorabl.es/" target="_blank">explorable explanations</a>!
+<br>
+<i>dodatna</i> preporuka prevoditelja: <a href="http://varljiv.org/tag/interactive" target="_blank">interaktivni članci na <b>varljiv.org</b></a>
+  
+</span>
+</p>
+
+<!-- - - - - - - - - - - - - - - - - -->
+<!-- - - - - THE PLAYERS - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - -->
+
+<p id="label_tft">Milo Za Drago</p>
+<p id="label_short_tft">
+milo za drago
+</p>
+<p id="icon_tft">
+<span class="tft">
+	<span class="icon"></span>
+	<span class="icon_label">Milo Za Drago</span>
+</span>
+</p>
+
+<p id="label_all_d">Vječita Varalica</p>
+<p id="label_short_all_d">
+varalica
+</p>
+<p id="icon_all_d">
+<span class="all_d">
+	<span class="icon"></span>
+	<span class="icon_label">Varalica</span>
+</span>
+</p>
+
+<p id="label_all_c">Vječiti Surađivač</p>
+<p id="label_short_all_c">
+surađivač
+</p>
+<p id="icon_all_c">
+<span class="all_c">
+	<span class="icon"></span>
+	<span class="icon_label">Surađivač</span>
+</span>
+</p>
+
+<p id="label_grudge">Zlopamtilo</p>
+<p id="label_short_grudge">
+zlopamtilo
+</p>
+<p id="icon_grudge">
+<span class="grudge">
+	<span class="icon"></span>
+	<span class="icon_label">Zlopamtilo</span>
+</span>
+</p>
+
+<p id="label_prober">Detektiv</p>
+<p id="label_short_prober">
+detektiv
+</p>
+<p id="icon_prober">
+<span class="prober">
+	<span class="icon"></span>
+	<span class="icon_label">Detektiv</span>
+</span>
+</p>
+
+<p id="label_tf2t">Milo Za Duplo</p>
+<p id="label_short_tf2t">
+milo za duplo
+</p>
+<p id="icon_tf2t">
+<span class="tf2t">
+	<span class="icon"></span>
+	<span class="icon_label">Milo Za Duplo</span>
+</span>
+</p>
+
+<p id="label_pavlov">Tupson</p>
+<p id="label_short_pavlov">
+tupson
+</p>
+<p id="icon_pavlov">
+<span class="pavlov">
+	<span class="icon"></span>
+	<span class="icon_label">Tupson</span>
+</span>
+</p>
+
+<p id="label_random">Nered</p>
+<p id="label_short_random">
+nered
+</p>
+<p id="icon_random">
+<span class="random">
+	<span class="icon"></span>
+	<span class="icon_label">Nered</span>
+</span>
+</p>
+
+<p id="forgot_whos_who">
+(zaboravio si koji je koji? dođi mišem iznad gumba da vidiš opis svakog lika!)
+</p>
+<p id="who_tft">
+Prvo surađuje. Onda tebi radi što god si mu ti napravio zadnji put.
+</p>
+<p id="who_all_d">
+Uvijek vara.
+</p>
+<p id="who_all_c">
+Uvijek surađuje.
+</p>
+<p id="who_grudge">
+Prvo surađuje, i nastavlja surađivati dok ga prvi put ne prevariš.
+Nakon toga samo vara.
+</p>
+<p id="who_prober">
+Na početku igra: Surađujem, Varam, Surađujem, Surađujem.
+Ako uzvratiš varanjem, igra kao Milo Za Drago. Inače igra kao Vječita Varalica.
+</p>
+<p id="who_tf2t">
+Surađuje, osim ako si ga prevario zadnja DVA puta.
+</p>
+<p id="who_pavlov">
+Prvo surađuje.
+Onda, ako si ti zadnji put surađivao, ponavlja svoj zadnji potez (čak i ako ga je napravio greškom).
+Ali ako si zadnji put varao, mijenja svoj zadnji potez (čak i ako je bio greška).
+</p>
+<p id="who_random">
+Nasumično bira Surađujem ili Varam.
+</p>
+
+
+<!-- - - - - - - - - - - - - - - - - -->
+<!-- - - - - SMALL LABELS! - - - - - -->
+<!-- - - - - - - - - - - - - - - - - -->
+
+<p id="label_cooperate">
+surađuj
+</p>
+
+<p id="label_cheat">
+varaj
+</p>
+
+<p id="label_play">
+igraj
+</p>
+
+<p id="label_start">
+START
+</p>
+
+<p id="label_stop">
+STOP
+</p>
+
+<p id="label_step">
+korak
+</p>
+
+<p id="label_reset">
+reset
+</p>
+
+<p id="label_population">
+populacija
+</p>
+
+<p id="label_payoffs">
+isplata
+</p>
+
+<p id="label_rules">
+runde
+</p>
+
+<p id="label_next">
+sljedeći &rarr;
+</p>
+
+<p id="label_continue">
+nastavi
+</p>
+
+
+<!-- - - - - - - - - - - - - - - - - -->
+<!-- - - - NAVIGATING CHAPTERS - - - -->
+<!-- - - - - - - - - - - - - - - - - -->
+
+<p id="chapter_intro">
+0. Uvod
+</p>
+<p id="chapter_oneoff">
+1. Jedna igra
+</p>
+<p id="chapter_iterated">
+2. Ponavljana igra
+</p>
+<p id="chapter_tournament">
+3. Jedan turnir
+</p>
+<p id="chapter_evolution">
+4. Ponavljani turniri
+</p>
+<p id="chapter_distrust">
+5. Evolucija nepovjerenja
+</p>
+<p id="chapter_noise">
+6. Porgeške
+</p>
+<p id="chapter_sandbox">
+7. Igraonica
+</p>
+<p id="chapter_conclusion">
+8. Zaključak
+</p>
+<p id="chapter_credits">
+9. Odjavna špica
+</p>

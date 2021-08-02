@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="600" height="220" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style id="bx-google-fonts">@import url(https://fonts.googleapis.com/css?family=Amiri:400,400italic,700,700italic|Assistant:200,300,400,600,700,800|Roboto:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic,900,900italic);</style>
+  </defs>
+  <text x="0" y="20" style="font-family: Amiri; font-size: 21px; white-space: pre;">Obični amerikanci razumiju što bi vlada trebala napraviti</text>
+  <text x="0" y="43" style="font-family: Amiri; font-size: 21px; white-space: pre;">bolje od takozvanih "stručnjaka".</text>
+  <text x="25" y="70" style="fill: rgb(0, 0, 255); font-family: Assistant; font-size: 14px; white-space: pre;">jako se slažem</text>
+  <text x="120" y="70" style="fill: rgb(100, 149, 237); font-family: Assistant; font-size: 14px; white-space: pre;">djelomično se slažem</text>
+  <text x="255" y="70" style="fill: rgb(211, 211, 211); font-family: Assistant; font-size: 14px; white-space: pre;">nisam sigurna</text>
+  <text x="345" y="70" style="fill: rgb(240, 128, 128); font-family: Assistant; font-size: 14px; white-space: pre;">djelomično se ne slažem</text>
+  <text x="495" y="70" style="fill: rgb(255, 0, 0); font-family: Assistant; font-size: 14px; white-space: pre;">jako se ne slažem</text>
+  <g id="Grid">
+    <line x1="100" y1="90" x2="100" y2="220" stroke="gray"/>
+    <line x1="340" y1="90" x2="340" y2="220" stroke="gray"/>
+    <line x1="580" y1="90" x2="580" y2="220" stroke="gray"/>
+  </g>
+  <text x="0" y="116" style="font-family: Assistant; font-size: 18px; white-space: pre;">za Hillary</text>
+  <g id="Hillary" transform="translate(100 100) scale(4.8 1)">
+    <rect width="13" fill="blue" height="20"/>
+    <rect x="13" width="23" fill="cornflowerblue" height="20"/>
+    <rect x="36" width=" 9" fill="lightgray" height="20"/>
+    <rect x="45" width="25" fill="lightcoral" height="20"/>
+    <rect x="70" width="30" fill="red" height="20"/>
+  </g>
+  <text x="0" y="146" style="font-family: Assistant; font-size: 14px; white-space: pre;">za drugog kand.</text>
+  <g id="Other" transform="translate(100 130) scale(4.8 1)">
+    <rect width="14" fill="blue" height="20"/>
+    <rect x="14" width="21" fill="cornflowerblue" height="20"/>
+    <rect x="35" width="22" fill="lightgray" height="20"/>
+    <rect x="57" width="28" fill="lightcoral" height="20"/>
+    <rect x="85" width="15" fill="red" height="20"/>
+  </g>
+  <text x="0" y="176" style="font-family: Assistant; font-size: 18px; white-space: pre;">za Trumpa</text>
+  <g id="Trump" transform="translate(100 160) scale(4.8 1)">
+    <rect width="31" fill="blue" height="20"/>
+    <rect x="31" width="40" fill="cornflowerblue" height="20"/>
+    <rect x="71" width=" 6" fill="lightgray" height="20"/>
+    <rect x="77" width="19" fill="lightcoral" height="20"/>
+    <rect x="95" width=" 5" fill="red" height="20"/>
+  </g>
+  <text x="0" y="206" style="fill: rgb(128, 128, 128); font-family: Assistant; font-size: 14px; white-space: pre;">nije glasao/la</text>
+  <g id="Trump" transform="translate(100 190) scale(4.8 1)">
+    <rect width="24" fill="blue" height="20"/>
+    <rect x="24" width="31" fill="cornflowerblue" height="20"/>
+    <rect x="55" width="23" fill="lightgray" height="20"/>
+    <rect x="78" width="13" fill="lightcoral" height="20"/>
+    <rect x="91" width=" 9" fill="red" height="20"/>
+  </g>
+  <text x="0" y="95" style="fill: rgb(138, 138, 138); font-style: italic; white-space: pre;">Glasao sam...</text>
+</svg>
